@@ -1,0 +1,708 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="dd7b0e4f-e1d3-5ccd-bf14-33651e81730d")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,453369,e=>{e.v({shrinkText:"BonsaiAwarePaymentLink-module__F3XEqq__shrinkText"})},541766,e=>{e.v({container:"index-module__Y3Ro3G__container",sectionContainer:"index-module__Y3Ro3G__sectionContainer"})},828764,e=>{"use strict";var t=e.i(276385),a=e.i(389959),n=e.i(121758),r=e.i(870955),s=e.i(20205),o=e.i(961998),i=e.i(103490),u=e.i(659042),l=e.i(549645),g=e.i(182409),c=e.i(416298),p=e.i(761201),d=e.i(761724),U=e.i(848577),m=e.i(862317),y=e.i(933484),v=e.i(560121),C=e.i(596139),h=e.i(261348),_=e.i(8047),R=e.i(472499),f=e.i(61732),x=e.i(440794);function w({endOfBilling:e,startOfBilling:a,errorMessage:n}){let r="Usage period";if(n)return(0,t.jsxs)(f.View,{gap:12,children:[(0,t.jsx)(_.Text,{variant:"subheadDefault",children:r}),(0,t.jsx)(_.Text,{variant:"text",children:n})]});if(!e||!a)return(0,t.jsxs)(f.View,{gap:12,children:[(0,t.jsx)(_.Text,{variant:"subheadDefault",children:r}),(0,t.jsx)(_.Text,{variant:"text",children:"You have no usage for this period"})]});let s=new Date(e),o=new Date(a),i=s.getFullYear()!==o.getFullYear()?"MMM dd, yyyy":"MMM dd";return(0,t.jsxs)(f.View,{gap:12,children:[(0,t.jsx)(_.Text,{variant:"subheadDefault",children:r}),(0,t.jsxs)(f.View,{clsx:x.default.cardContent,children:[(0,t.jsxs)(f.View,{clsx:x.default.fieldRow,children:[(0,t.jsx)(_.Text,{color:"dimmer",children:"Period"}),(0,t.jsxs)(_.Text,{children:[(0,h.format)(o,i)," - ",(0,h.format)(s,i)]})]}),(0,t.jsxs)(f.View,{clsx:x.default.fieldRow,children:[(0,t.jsx)(_.Text,{color:"dimmer",children:"Resets"}),(0,t.jsx)(R.Timestamp,{textColor:"dimmer",date:s,dateFormat:"relative"})]})]})]})}var I=e.i(914981),P=e.i(753451),B=e.i(638141),S=e.i(453369);function j({text:e,onClick:a}){let n=(0,I.useRouter)(),r=(0,P.isInBonsaiWebview)(n),s=(0,P.doesBonsaiWebviewSupportFeature)(n,"stripePayment"),{showPaymentFlow:o}=(0,B.default)();return r&&!s?(0,t.jsx)(_.Text,{clsx:S.default.shrinkText,children:(0,t.jsx)("a",{href:"https://replit.com",target:"_blank",children:"Manage on replit.com"})}):(0,t.jsx)(f.View,{onClick:s?()=>o({type:"setup",source:"usage"}):a,children:(0,t.jsx)("a",{children:e})})}var N=e.i(860700),D=e.i(101407),b=e.i(888133),T=e.i(477928);function M({paymentMethod:e,setPaymentModalOpen:a}){if(e?.__typename!=="PaymentMethod"||e?.last4===null)return(0,t.jsxs)(f.View,{gap:12,children:[(0,t.jsx)(_.Text,{variant:"subheadDefault",children:"Payment method"}),(0,t.jsxs)(f.View,{clsx:x.default.cardContent,children:[(0,t.jsx)(_.Text,{children:"None"}),(0,t.jsx)(j,{text:"Add payment",onClick:()=>a(!0)})]})]});let{last4:n,expirationMonth:r,expirationYear:s}=e;return(0,t.jsxs)(f.View,{gap:12,children:[(0,t.jsx)(_.Text,{variant:"subheadDefault",children:"Payment method"}),(0,t.jsxs)(f.View,{clsx:x.default.cardContent,children:[(0,t.jsxs)(f.View,{row:!0,gap:8,align:"center",children:[(0,t.jsx)(l.default,{}),(0,t.jsx)(_.Text,{children:n})]}),(0,t.jsxs)(_.Text,{color:"dimmer",children:["Expires ",r,"/",s]}),(0,t.jsx)(j,{text:"Manage",onClick:()=>a(!0)})]})]})}function k({currentUser:e,loading:a,error:n,detailedCredits:o}){let[i,u]=(0,r.useQueryState)(p.USAGE_PAGE_PAYMENT_METHOD_QUERY_PARAM,s.parseAsBoolean),l=e?.usageInterval?.__typename!=="UsageInterval"||n?null:e.usageInterval,g=e?.customer,c=g?.id,d=g?.usageInterval.spendingControls.__typename==="CustomerSpendingControls"?g.usageInterval.spendingControls.alerts:void 0;if(a||!e)return(0,t.jsx)(f.View,{css:D.loaderCss.loader});let{hasCore:U,billingInfo:m,paymentMethod:y}=e;return(0,t.jsx)(t.Fragment,{children:(0,t.jsxs)(f.View,{clsx:x.default.cardsContainer,children:[(0,t.jsx)(f.View,{p:12,clsx:x.default.card,br:8,children:(0,t.jsx)(N.UserPlanInfo,{isCore:U,planAmountCents:m?.planInfo?.amount??void 0,planPeriod:m?.planInfo?.interval??void 0})}),U?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(T.CreditBreakdownCards,{detailedCredits:o,loading:a,error:void 0!==n,resetDate:l?.endDate}),(0,t.jsx)(f.View,{p:12,clsx:x.default.card,br:8,children:(0,t.jsx)(b.AdditionalUsage,{totalUsageCostUsd:l?.totalAmountUsd,error:void 0!==n,canEditBudget:!0,alertsConfig:d,customerId:c})})]}):(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(f.View,{p:12,clsx:x.default.card,br:8,children:(0,t.jsx)(b.TotalUsage,{totalUsageCostUsd:l?.totalAmountUsd,error:void 0!==n,canEditBudget:!1,alertsConfig:d,customerId:c,tooltip:l?.planDiscountUsd?(0,t.jsx)(b.UserUsageTotalTooltipContent,{creditDisplayText:`Replit ${C.corePlanName} monthly credits`,totalUsageCostUsd:l?.totalAmountUsd??0,subtotalUsageCostUsd:l?.subtotalAmountUsd??0,planDiscountUsd:l?.planDiscountUsd??0}):void 0})}),(0,t.jsx)(f.View,{p:12,clsx:x.default.card,br:8,children:(0,t.jsx)(w,{endOfBilling:l?.endDate,startOfBilling:l?.startDate,errorMessage:void 0!==n?"Unable to fetch usage period":void 0})})]}),(0,t.jsx)(f.View,{p:12,clsx:x.default.card,br:8,children:(0,t.jsx)(M,{paymentMethod:y,setPaymentModalOpen:u})})]})})}var E=e.i(54325),O=e.i(392771),A=e.i(351623),$=e.i(551915),F=e.i(344480);e.i(975473);let q={},Q=A.gql`
+    query AgentResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          agentUsage {
+            usage
+            displayName
+            allotment
+            percentage
+            overageCostsUSD
+            totalRepls
+            unitPrice
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+          __typename
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;var G=e.i(845822),V=e.i(239794);function L(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,fetchPolicy:"cache-and-network",variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...q,...e},F.useQuery(Q,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.agentUsage.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.agentUsage,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.agentUsage.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.agentUsage.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"agent-usage",resourceUsageType:"Dollars",displayConfig:{},hideQuotaColumns:!0})}let z={},W=A.gql`
+    query AssistantResourceRowEditsByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          assistantEdits {
+            usage
+            displayName
+            percentage
+            allotment
+            overageCostsUSD
+            unitPrice
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+          __typename
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;var H=e.i(562782);function Y(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...z,...e},F.useQuery(W,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.assistantEdits.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.assistantEdits,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.assistantEdits.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.assistantEdits.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"assistant",resourceUsageType:"EditRequests",tooltip:`Assistant usage is calculated based on ${(0,H.default)(G.ASSISTANT_USAGE_UNIT)}. Your subscription includes monthly credits that automatically apply to Assistant usage. Any additional usage beyond these credits will be billed to your linked payment method.`,displayConfig:{},hideQuotaColumns:!0})}let X={},K=A.gql`
+    query AutoscaleComputeResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          autoscaleComputeUnits {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;function Z(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...X,...e},F.useQuery(K,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.autoscaleComputeUnits.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.autoscaleComputeUnits,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.autoscaleComputeUnits.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.autoscaleComputeUnits.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"autoscale-compute",resourceUsageType:"ComputeUnits",displayConfig:{truncateToMillions:!0}})}let J={},ee=A.gql`
+    query AutoscaleDeploymentsResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          autoscaleDeployments {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;function et(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...J,...e},F.useQuery(ee,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.autoscaleDeployments.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.autoscaleDeployments,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.autoscaleDeployments.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.autoscaleDeployments.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"autoscale-deployments",resourceUsageType:"Deployments",displayConfig:{truncateToMillions:!0}})}let ea={},en=A.gql`
+    query AutoscaleRequestsResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          autoscaleRequests {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;function er(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...ea,...e},F.useQuery(en,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.autoscaleRequests.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.autoscaleRequests,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.autoscaleRequests.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.autoscaleRequests.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"autoscale-requests",resourceUsageType:"Requests",displayConfig:{truncateToMillions:!0}})}var es=e.i(155564),eo=e.i(663614),ei=e.i(784763),eu=e.i(417785);function el(){var e,a,n;let r,s=(0,ei.useCollaboratorLimit)();if("error"===s.type)return null;let o="loading"===s.type,i="data"===s.type?s.collaboratorCount:0,u="data"===s.type?s.collaboratorLimit:0,l="data"===s.type&&s.shouldEnforceMultiplayerLimit;if(!o&&!l)return null;let g="data"===s.type&&s.collaboratorCount>0?(0,t.jsx)(es.ResourceBreakdown,{type:"tier",summary:(e=s.collaboratorsByRepl,a=s.collaboratorCount,n=s.collaboratorLimit,r=[...e.values()].map(({users:e,...t})=>({usageRepl:{...t},usage:e.length,percentage:e.length/n,id:t.id,__typename:"UnitPriceReplUsageType"})),(0,eu.sharedSummary)({replUsageOverview:r,usage:a,allotment:n,__typename:"UsageOverviewUnitPriceSku"})),resourceUsageType:"None",showBreakdown:!1,username:s.username,itemCount:s.collaboratorsByRepl.size,onFetchMore:()=>{},hasNextPage:!1,fetchingMore:!1}):null;return(0,t.jsx)(eo.ResourceRow,{resourceName:"Collaborators",tooltip:"Collaborators invited to your account are only counted once, regardless of how many Apps they have access to.",resourceUsageType:"None",includedWithPlan:u.toString(),loading:o,unitPrice:null,usagePercentage:null,usageUnits:i,price:0,id:"collaborator-count-row",displayWarnings:!0,hideCost:!0,children:g})}let eg={},ec=A.gql`
+    query DeploymentsOutboundDataTransferResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          deploymentsOutboundDataTransfer {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`,ep=function(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...eg,...e},F.useQuery(ec,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.deploymentsOutboundDataTransfer.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.deploymentsOutboundDataTransfer,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.deploymentsOutboundDataTransfer.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.deploymentsOutboundDataTransfer.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"deployment-data-transfer",resourceUsageType:"GiB",displayConfig:{precision:0}})},ed={},eU=A.gql`
+    query ModelFarmResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    id
+    username
+    usageInterval {
+      __typename
+      ... on UsageInterval {
+        resources {
+          modelFarmUsage {
+            usage
+            displayName
+            allotment
+            overageCostsUSD
+            totalRepls
+            unitPrice
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on Error {
+        message
+      }
+    }
+  }
+}
+    ${$.UnitPriceReplUsageConnectionFragmentDoc}`;function em(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,fetchPolicy:"cache-and-network",variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...ed,...e},F.useQuery(eU,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.modelFarmUsage.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.modelFarmUsage,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.modelFarmUsage.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.modelFarmUsage.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"model-farm-usage",resourceUsageType:"Dollars",tooltip:"Replit AI Integrations usage from LLM requests. Billed at public API pricing (varies by provider and model).",displayConfig:{},hideQuotaColumns:!0})}let ey={},ev=A.gql`
+    query NeonComputeResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          neonComputeTime {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`,eC=function(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...ey,...e},F.useQuery(ev,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.neonComputeTime.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.neonComputeTime,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.neonComputeTime.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.neonComputeTime.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"postgres-compute",resourceUsageType:"Hours",displayConfig:{}})},eh={},e_=A.gql`
+    query NeonStorageResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          neonDataStorage {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`,eR=function(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...eh,...e},F.useQuery(e_,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.neonDataStorage.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.neonDataStorage,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.neonDataStorage.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.neonDataStorage.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"postgres-storage",resourceUsageType:"GiB",displayConfig:{precision:0}})},ef={},ex=A.gql`
+    query ObjectStorageAdvancedOperationsRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          objectStorageAdvancedOperations {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;var ew=e.i(92796);let eI="Requests";function eP(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...ef,...e},F.useQuery(ex,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.objectStorageAdvancedOperations,l=i?.objectStorageAdvancedOperations.usageByReplConnection.items,g=i?.objectStorageAdvancedOperations.usageByReplConnection.pageInfo.hasNextPage??!1,c=l&&u?(0,eu.sharedSummary)({replUsageOverview:l,usage:u.usage,allotment:u.allotment,__typename:"UsageOverviewUnitPriceSku"}):null,p=o&&c&&u&&l&&l.length>0,d=(0,ew.getDisplayedQuotaText)(u?.allotment,{resourceUsageType:eI,truncateToMillions:!0});return(0,t.jsx)(eo.ResourceRow,{resourceName:u?.displayName,resourceUsageType:eI,includedWithPlan:d,loading:s===O.NetworkStatus.loading,unitPrice:u?.unitPrice,usagePercentage:null,usageUnits:u?.usage??0,price:u?.overageCostsUSD??0,id:"object-storage-advanced-operations",children:p?(0,t.jsx)(es.ResourceBreakdown,{type:"tier",resourceUsageType:eI,summary:c,showBreakdown:!0,username:o,itemCount:u.totalRepls,onFetchMore:()=>{i&&i.objectStorageAdvancedOperations.usageByReplConnection.pageInfo.hasNextPage&&g&&r({variables:{input:{after:i.objectStorageAdvancedOperations.usageByReplConnection.pageInfo.nextCursor}}})},hasNextPage:g,fetchingMore:s===O.NetworkStatus.fetchMore}):null})}let eB={},eS=A.gql`
+    query ObjectStorageBasicOperationsRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          objectStorageBasicOperations {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`,ej="Requests";function eN(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...eB,...e},F.useQuery(eS,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.objectStorageBasicOperations,l=i?.objectStorageBasicOperations.usageByReplConnection.items,g=i?.objectStorageBasicOperations.usageByReplConnection.pageInfo.hasNextPage??!1,c=l&&u?(0,eu.sharedSummary)({replUsageOverview:l,usage:u.usage,allotment:u.allotment,__typename:"UsageOverviewUnitPriceSku"}):null,p=o&&c&&u&&l&&l.length>0,d=(0,ew.getDisplayedQuotaText)(u?.allotment,{resourceUsageType:ej,truncateToMillions:!0});return(0,t.jsx)(eo.ResourceRow,{resourceName:u?.displayName,resourceUsageType:ej,includedWithPlan:d,loading:s===O.NetworkStatus.loading,unitPrice:u?.unitPrice,usagePercentage:null,usageUnits:u?.usage??0,price:u?.overageCostsUSD??0,id:"object-storage-basic-operations",children:p?(0,t.jsx)(es.ResourceBreakdown,{type:"tier",resourceUsageType:ej,summary:c,showBreakdown:!0,username:o,itemCount:u.totalRepls,onFetchMore:()=>{i&&i.objectStorageBasicOperations.usageByReplConnection.pageInfo.hasNextPage&&g&&r({variables:{input:{after:i.objectStorageBasicOperations.usageByReplConnection.pageInfo.nextCursor}}})},hasNextPage:g,fetchingMore:s===O.NetworkStatus.fetchMore}):null})}let eD={},eb=A.gql`
+    query ObjectStorageDataStorageRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          objectStorageDataStorage {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`,eT="GiB-months";function eM(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...eD,...e},F.useQuery(eb,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.objectStorageDataStorage,l=i?.objectStorageDataStorage.usageByReplConnection.items,g=i?.objectStorageDataStorage.usageByReplConnection.pageInfo.hasNextPage??!1,c=l&&u?(0,eu.sharedSummary)({replUsageOverview:l,usage:u.usage,allotment:u.allotment,__typename:"UsageOverviewUnitPriceSku"}):null,p=o&&c&&u&&l&&l.length>0,d=(0,ew.getDisplayedQuotaText)(u?.allotment,{resourceUsageType:eT,truncateToMillions:!0});return(0,t.jsx)(eo.ResourceRow,{resourceName:u?.displayName,resourceUsageType:eT,includedWithPlan:d,loading:s===O.NetworkStatus.loading,unitPrice:u?.unitPrice,usagePercentage:null,usageUnits:u?.usage??0,price:u?.overageCostsUSD??0,id:"object-storage-data-storage",children:p?(0,t.jsx)(es.ResourceBreakdown,{type:"tier",resourceUsageType:eT,summary:c,showBreakdown:!0,username:o,itemCount:u.totalRepls,onFetchMore:()=>{i&&i.objectStorageDataStorage.usageByReplConnection.pageInfo.hasNextPage&&g&&r({variables:{input:{after:i.objectStorageDataStorage.usageByReplConnection.pageInfo.nextCursor}}})},hasNextPage:g,fetchingMore:s===O.NetworkStatus.fetchMore}):null})}let ek={},eE=A.gql`
+    query ObjectStorageDataTransferRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          objectStorageDataTransfer {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;function eO(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...ek,...e},F.useQuery(eE,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.objectStorageDataTransfer,l=i?.objectStorageDataTransfer.usageByReplConnection.items,g=i?.objectStorageDataTransfer.usageByReplConnection.pageInfo.hasNextPage??!1,c=l&&u?(0,eu.sharedSummary)({replUsageOverview:l,usage:u.usage,allotment:u.allotment,__typename:"UsageOverviewUnitPriceSku"}):null,p=o&&c&&u&&l&&l.length>0,d=(0,ew.getDisplayedQuotaText)(u?.allotment,{resourceUsageType:"GiB",truncateToMillions:!0});return(0,t.jsx)(eo.ResourceRow,{resourceName:u?.displayName,resourceUsageType:"GiB",includedWithPlan:d,loading:s===O.NetworkStatus.loading,unitPrice:u?.unitPrice,usagePercentage:null,usageUnits:u?.usage??0,price:u?.overageCostsUSD??0,id:"object-storage-data-transfer",children:p?(0,t.jsx)(es.ResourceBreakdown,{type:"tier",resourceUsageType:"GiB",summary:c,showBreakdown:!0,username:o,itemCount:u.totalRepls,onFetchMore:()=>{i&&i.objectStorageDataTransfer.usageByReplConnection.pageInfo.hasNextPage&&g&&r({variables:{input:{after:i.objectStorageDataTransfer.usageByReplConnection.pageInfo.nextCursor}}})},hasNextPage:g,fetchingMore:s===O.NetworkStatus.fetchMore}):null})}var eA=e.i(135173),e$=e.i(929773);function eF(){let e=(0,e$.useReplLimit)(),a="data"===e.type?e.starterPlanReplLimit:eA.STARTER_PLAN_REPL_LIMIT;if("error"===e.type)return null;let n="loading"===e.type,r="data"===e.type?e.replCount:0,s="data"===e.type&&e.isStarterUser?a.toString():"Unlimited";return(0,t.jsx)(eo.ResourceRow,{resourceName:"Apps",resourceUsageType:"None",includedWithPlan:s,loading:n,unitPrice:null,usagePercentage:null,usageUnits:r,price:0,id:"repl-count-row",displayWarnings:!0,hideCost:!0})}let eq={},eQ=A.gql`
+    query ReplMinuteResourceRowUsage {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        startDate
+        endDate
+        resources {
+          replMinutes {
+            displayName
+            usage
+            percentage
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}`,eG=new Date("2024-08-26T17:00:00Z");function eV(){var e;let a,{data:n,loading:r}=(e={ssr:!1},a={...eq,...e},F.useQuery(eQ,a)),s=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,o=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?new Date(n.currentUser.usageInterval.startDate):null,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?new Date(n.currentUser.usageInterval.endDate):null,u=n?.currentUser?.isCore??!1,l=s?.replMinutes?.percentage??null;if(!(s&&o&&i))return null;let g=o<eG,c=s?.replMinutes?.usage??0,p=(0,h.format)(i,"MMM dd"),d=g&&!u?`Development time is not counted towards your usage until your next usage period begins on ${p}`:void 0;return(0,t.jsx)(eo.ResourceRow,{tooltip:d,resourceName:s?.replMinutes?.displayName??"Development Time",resourceUsageType:"Minutes",includedWithPlan:u?"-":""+12e3,loading:r,unitPrice:null,usagePercentage:g?0:l,usageUnits:g?0:c,price:0,id:"repl-minutes-row",displayWarnings:!0,hideCost:!0})}let eL={},ez=A.gql`
+    query ReservedVMResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          reservedVMComputeTime {
+            usage
+            displayName
+            unitPrice
+            allotment
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on MatrixPriceReplUsageTypeConnection {
+                ...MatrixPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.MatrixPriceReplUsageConnectionFragmentDoc}`;var eW=e.i(459097);function eH(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...eL,...e},F.useQuery(ez,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.reservedVMComputeTime.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(eW.default,{username:o,rowData:i?.reservedVMComputeTime,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.reservedVMComputeTime.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.reservedVMComputeTime.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"reserved-vms",resourceUsageType:"ComputeHours",displayConfig:{},tierType:"reservedVm"})}let eY={},eX=A.gql`
+    query ScheduledComputeResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          scheduledComputeUnits {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;function eK(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...eY,...e},F.useQuery(eX,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.scheduledComputeUnits.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.scheduledComputeUnits,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.scheduledComputeUnits.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.scheduledComputeUnits.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"scheduled-compute",resourceUsageType:"ComputeUnits",displayConfig:{truncateToMillions:!0}})}let eZ={},eJ=A.gql`
+    query SchedulersResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          scheduledSchedulerDays {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on UnitPriceReplUsageTypeConnection {
+                ...UnitPriceReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.UnitPriceReplUsageConnectionFragmentDoc}`;function e0(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...eZ,...e},F.useQuery(eJ,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.scheduledSchedulerDays.usageByReplConnection.pageInfo.hasNextPage??!1;return(0,t.jsx)(V.default,{username:o,rowData:i?.scheduledSchedulerDays,fetchingMore:s===O.NetworkStatus.fetchMore,onFetchMore:()=>{i&&i.scheduledSchedulerDays.usageByReplConnection.pageInfo.hasNextPage&&u&&r({variables:{input:{after:i.scheduledSchedulerDays.usageByReplConnection.pageInfo.nextCursor}}})},loading:s===O.NetworkStatus.loading,id:"schedulers",resourceUsageType:"Deployments",displayConfig:{truncateToMillions:!0}})}let e1={},e4=A.gql`
+    query StaticDeploymentsResourceRowUsageByRepl($input: UsageOverviewUsageByReplInput) {
+  currentUser {
+    ...UsageBreakdownCurrentUser
+    usageInterval {
+      ... on UsageInterval {
+        __typename
+        resources {
+          staticDeployments {
+            displayName
+            unitPrice
+            allotment
+            usage
+            percentage
+            overageCostsUSD
+            totalRepls
+            usageByReplConnection(input: $input) {
+              ... on StaticDeploymentReplUsageTypeConnection {
+                ...StaticDeploymentReplUsageConnection
+              }
+            }
+          }
+        }
+      }
+      ... on ServiceUnavailable {
+        __typename
+        message
+      }
+      ... on UserError {
+        __typename
+        message
+      }
+      ... on UnauthorizedError {
+        __typename
+        message
+      }
+    }
+  }
+}
+    ${$.UsageBreakdownCurrentUserFragmentDoc}
+${$.StaticDeploymentReplUsageConnectionFragmentDoc}`,e2="Site";function e7(){var e;let a,{data:n,fetchMore:r,networkStatus:s}=(e={ssr:!1,variables:{input:{count:G.NUM_REPLS_IN_PAGE}},notifyOnNetworkStatusChange:!0},a={...e1,...e},F.useQuery(e4,a)),o=n?.currentUser?.username,i=n?.currentUser?.usageInterval?.__typename==="UsageInterval"?n.currentUser.usageInterval.resources:null,u=i?.staticDeployments,l=i?.staticDeployments.usageByReplConnection.items,g=i?.staticDeployments.usageByReplConnection.pageInfo.hasNextPage??!1,c=u&&l?(0,eu.sharedSummary)({replUsageOverview:l,usage:u.usage,allotment:u.allotment,__typename:"UsageOverviewStaticDeployments"}):null,p=o&&c&&u&&l&&l.length>0,d=(0,ew.getDisplayedQuotaText)(u?.allotment,{resourceUsageType:e2});return(0,t.jsx)(eo.ResourceRow,{resourceName:u?.displayName,resourceUsageType:e2,includedWithPlan:d,loading:s===O.NetworkStatus.loading,unitPrice:u?.unitPrice,usagePercentage:u?.percentage??0,usageUnits:u?.usage??0,price:u?.overageCostsUSD??0,id:"static-deployments",children:p?(0,t.jsx)(es.ResourceBreakdown,{type:"static",resourceUsageType:e2,summary:c,showBreakdown:!1,username:o,itemCount:u.totalRepls,onFetchMore:()=>{i&&i.staticDeployments.usageByReplConnection.pageInfo.hasNextPage&&g&&r({variables:{input:{after:i.staticDeployments.usageByReplConnection.pageInfo.nextCursor}}})},hasNextPage:g,fetchingMore:s===O.NetworkStatus.fetchMore}):null})}var e3=e.i(926965),e5=e.i(151027),e6=e.i(730497),e8=e.i(776065),e9=e.i(443505),te=e.i(919073),tt=e.i(528326),ta=e.i(108431),tn=e.i(145315),tr=e.i(443301),ts=e.i(926684),to=e.i(541766);let ti={page:"usage"};function tu({isCore:e}){return(0,t.jsxs)("table",{"aria-label":"Workspace Usage",clsx:to.default.sectionContainer,children:[(0,t.jsx)("thead",{children:(0,t.jsx)(E.ResourceHeader,{icon:(0,t.jsx)(u.default,{}),name:"Project Editor Development",isCore:e})}),(0,t.jsxs)("tbody",{children:[(0,t.jsx)(eF,{}),(0,t.jsx)(el,{}),(0,t.jsx)(eV,{})]})]})}function tl({isCore:e}){return(0,t.jsxs)("table",{"aria-label":"Published Apps Usage",clsx:to.default.sectionContainer,children:[(0,t.jsx)("thead",{children:(0,t.jsx)(E.ResourceHeader,{icon:(0,t.jsx)(g.default,{}),name:"Published Apps",isCore:e})}),(0,t.jsxs)("tbody",{children:[(0,t.jsx)(ep,{}),(0,t.jsx)(eH,{}),(0,t.jsx)(et,{}),(0,t.jsx)(Z,{}),(0,t.jsx)(er,{}),(0,t.jsx)(e0,{}),(0,t.jsx)(eK,{}),(0,t.jsx)(e7,{}),(0,t.jsx)(eR,{}),(0,t.jsx)(eC,{}),(0,t.jsx)(eM,{}),(0,t.jsx)(eO,{}),(0,t.jsx)(eN,{}),(0,t.jsx)(eP,{})]})]})}function tg(){return(0,t.jsx)(V.default,{username:void 0,rowData:void 0,fetchingMore:!1,onFetchMore:()=>{},loading:!0,id:"agent-loading",resourceUsageType:"Dollars",displayConfig:{},hideQuotaColumns:!0})}function tc({isCore:e,loading:a}){return(0,t.jsxs)("table",{"aria-label":"AI Usage",clsx:to.default.sectionContainer,children:[(0,t.jsx)("thead",{children:(0,t.jsx)(E.ResourceHeader,{icon:(0,t.jsx)(i.default,{}),name:"AI",isCore:e,hideQuotaColumns:!0})}),(0,t.jsxs)("tbody",{children:[a?(0,t.jsx)(tg,{}):(0,t.jsx)(L,{}),(0,t.jsx)(em,{}),(0,t.jsx)(Y,{})]})]})}function tp(){let{data:e,loading:n,error:r}=(0,o.useUsageOverviewCurrentUserQuery)({ssr:!1}),s=(0,e3.usePathHash)(),i=n?null:e?.currentUser?.hasCore??!1;return((0,a.useEffect)(()=>{if(n||!s)return;let e=document.getElementById(s);e&&e.scrollIntoView({behavior:"smooth",block:"center",inline:"center"})},[s,n]),(n||e)&&!r)?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(tc,{isCore:i,loading:n}),(0,t.jsx)(tu,{isCore:i}),(0,t.jsx)(tl,{isCore:i})]}):(0,t.jsx)(ta.StatusBanner,{colorway:"negative",text:"Unable to fetch usage data. Please try again later.",icon:(0,t.jsx)(c.default,{})})}function td(){let e=(0,P.useIsInBonsaiWebview)(),i=(0,e8.useQueryParam)("elevated","boolean"),u=(0,e6.useFlag)({controlName:"flag-free-plan",default:!1}),[g,c]=(0,r.useQueryState)(p.USAGE_PAGE_PAYMENT_METHOD_QUERY_PARAM,s.parseAsBoolean),[C,h]=(0,r.useQueryState)("redeemGiftCard",s.parseAsBoolean),[R,x]=(0,r.useQueryState)("giftCardCode",s.parseAsString),{data:w,loading:I,error:B,refetch:S}=(0,o.useUsageOverviewCurrentUserQuery)({ssr:!1}),{data:j,loading:N,error:D}=(0,o.useUserDetailedCreditsQuery)({ssr:!1}),b=I||N,T=B||D;(0,e9.default)({onChange:S}),(0,a.useEffect)(()=>{C&&R&&n.default.show(U.default,{giftCardCode:R,onClose:()=>{h(null),x(null),S()}})},[C,R,h,x,S]);let{orgId:M}=(0,e5.useCurrentUserStoredOrgContext)(),E=w?.currentUser?.isSubscribed??!1;if(u&&!E&&!M&&!I&&!e)return(0,t.jsx)(tr.default,{});let O=w?.currentUser?.usageBasedBilling.__typename==="UserUsageBasedBillingSummary"&&w.currentUser.usageBasedBilling.capabilities.hasOrbCustomer,A=w?.currentUser?.usageBasedBillingBudget?.__typename==="UsageBasedBillingBudget"?w.currentUser.usageBasedBillingBudget:null,$=w?.currentUser?.customer,F=$?.usageInterval.spendingControls.__typename==="CustomerSpendingControls"?$.usageInterval.spendingControls.alerts:void 0,q=w?.currentUser?.usageInterval?.__typename==="UsageInterval"?w.currentUser.usageInterval.totalAmountUsd:void 0,Q=w?.currentUser?.paymentMethod?.__typename==="PaymentMethod"?w.currentUser.paymentMethod:void 0,G=j?.currentUser?.usageInterval?.__typename==="UsageInterval"&&j.currentUser.usageInterval.detailedCredits?.__typename==="DetailedCredits"?j.currentUser.usageInterval.detailedCredits:void 0;return(0,t.jsx)(ts.TrackingHierarchyProvider,{hierarchy:ti,children:(0,t.jsxs)(te.ShadesSurface,{clsx:to.default.container,elevate:!!i&&"1x",children:[(0,t.jsxs)(f.View,{gap:32,children:[e?null:(0,t.jsx)(_.Header,{variant:"headerBig",level:1,children:"Usage"}),Q||b||e?null:(0,t.jsx)(tn.StatusBannerButton,{colorway:"warning",iconLeft:(0,t.jsx)(l.default,{}),text:"You don't have a payment method on file. Click here to add one and avoid service interruptions.",onClick:()=>c(!0)}),(0,t.jsx)(m.BudgetWarning,{totalAmountUsd:q,usageBasedBillingAlerts:F,hasExceededBudget:A?.hasReachedBudget}),(0,t.jsxs)(f.View,{gap:16,children:[(0,t.jsx)(_.Header,{variant:"subheadBig",level:2,children:"Billing overview"}),(0,t.jsx)(k,{currentUser:w?.currentUser,loading:b,error:T,detailedCredits:G})]}),w?.currentUser?.hasCore?(0,t.jsx)(y.CreditsSection,{detailedCredits:G,loading:b,error:void 0!==T}):null,(0,t.jsxs)(f.View,{gap:16,children:[(0,t.jsx)(_.Header,{variant:"subheadBig",level:2,children:"Resource usage"}),(0,t.jsx)(v.default,{hasOrbCustomer:O}),(0,t.jsx)(tp,{})]})]}),(0,t.jsx)(tt.Modal,{isOpen:g??!1,onRequestClose:()=>{c(null),S()},children:(0,t.jsxs)(f.View,{gap:16,children:[(0,t.jsx)(_.Header,{variant:"headerDefault",level:1,children:"Manage Payment"}),(0,t.jsx)(d.AccountPaymentMethodFlow,{})]})})]})})}var tU=e.i(597039),tm=e.i(833475),ty=e.i(775702),tv=e.i(626425),tC=e.i(191373),th=e.i(565848);function t_(){let{loading:e,buildTabContentProps:n}=(0,th.useUniversalSettingsData)(),r=n("customerUsage",(0,a.useCallback)(()=>{},[]));return(0,t.jsx)(tm.default,{title:"Usage",children:(0,t.jsx)(tv.UniversalSettingsContentArea,{loading:e,tabContentProps:r?{...r,hideHeader:!0}:null})})}function tR(){let{shouldRedirect:e,loading:a}=(0,tC.useRedirectToUniversalSettings)("customerUsage");return a||e?(0,t.jsx)(tm.default,{title:"Usage",children:(0,t.jsx)(ty.default,{})}):(0,t.jsx)(tm.default,{title:"Usage",description:"Replit Account Resource Usage",children:(0,t.jsx)(td,{})})}e.s(["default",0,()=>{let e=(0,P.useIsInBonsaiWebview)(),{isUnifiedPlanEnabled:a,loading:n}=(0,tU.useIsUnifiedPlanEnabledPersonal)({skip:!e});return n?(0,t.jsx)(tm.default,{title:"Usage",children:(0,t.jsx)(ty.default,{})}):e&&a?(0,t.jsx)(t_,{}):(0,t.jsx)(tR,{})}],828764)},547086,(e,t,a)=>{let n="/usage";(window.__NEXT_P=window.__NEXT_P||[]).push([n,()=>e.r(828764)]),t.hot&&t.hot.dispose(function(){window.__NEXT_P.push([n])})}]);
+
+//# debugId=dd7b0e4f-e1d3-5ccd-bf14-33651e81730d
+//# sourceMappingURL=08.srzhj6sw.m.js.map
