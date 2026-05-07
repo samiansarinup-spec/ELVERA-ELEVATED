@@ -1,0 +1,292 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="25c574d3-127f-d96d-259c-2b4b65751e24")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,875744,e=>{e.v({root:"RoleBadge-module__zj-yvq__root"})},389133,e=>{"use strict";var r=e.i(276385),t=e.i(712903),i=e.i(177037),s=e.i(596139),a=e.i(480028),n=e.i(744006),l=e.i(244945),o=e.i(875744);let u=({tagline:e,name:t,color:i,iconLeft:s})=>{let a=(0,r.jsx)(n.Pill,{text:t,colorway:i,iconLeft:s,clsx:o.default.root,variant:"muted",compact:!0});return e?(0,r.jsx)(l.Tooltip,{isDisabled:!e,tooltip:e,children:a}):a},d=()=>(0,r.jsx)(u,{name:s.corePlanName,color:"orange",iconLeft:(0,r.jsx)(t.default,{size:10,color:i.brandOrange})});e.s(["CoreBadge",0,d,"DefaultBadge",0,u,"RoleBadge",0,{Default:u,Admin:({tagline:e})=>(0,r.jsx)(u,{tagline:e??"Admin",name:"Admin",color:"yellow"}),Detective:({tagline:e})=>(0,r.jsx)(u,{tagline:e??"Detective",name:"Detective",color:"green"}),Featured:({tagline:e})=>(0,r.jsx)(u,{tagline:e??"Verified",name:"Verified",color:"blue"}),Hacker:({tagline:e})=>(0,r.jsx)(u,{tagline:e??`${s.hackerPlanName} users are subscribed to Replit's paid ${s.hackerPlanName} Plan.`,name:s.hackerPlanName,color:"green"}),Core:d,Pro:()=>(0,r.jsx)(u,{name:s.proPlanName,color:"blue",iconLeft:(0,r.jsx)(t.default,{size:12,color:a.tokens.blueStrongest})}),LanguageJammer:({tagline:e})=>(0,r.jsx)(u,{tagline:e??"Language Jammer",name:"Language Jammer",color:"purple"}),ReplitRep:({tagline:e})=>(0,r.jsx)(u,{tagline:e??"Replit Rep",name:"Replit Rep",color:"magenta"}),ReplitRepEdu:({tagline:e})=>(0,r.jsx)(u,{tagline:e??"Replit Rep EDU",name:"Replit Rep EDU",color:"green"}),Patron:({tagline:e})=>(0,r.jsx)(u,{tagline:e??"Patron",name:"Patron",color:"purple"}),Pythonista:({tagline:e})=>(0,r.jsx)(u,{tagline:e??"Pythonista",name:"Pythonista",color:"teal"})}])},449859,e=>{"use strict";var r,t=e.i(276385),i=e.i(389133),s=((r={}).Admin="ADMIN",r.Detective="DETECTIVE",r.Featured="FEATURED",r.LanguageJammer="LANGUAGE_JAMMER",r.Moderator="MODERATOR",r.ReplitRep="REPLIT_REP",r.ReplitRepEdu="REPLIT_REP_EDU",r.Patron="PATRON",r.Pythonista="PYTHONISTA",r.Student="STUDENT",r.Teacher="TEACHER",r.Hacker="hacker",r.HackerPro="hacker_pro",r.Pro="pro",r);e.s(["RUIUserRoles",()=>s,"UserRoleBadge",0,({userRole:e,tagline:r,name:s})=>{switch(e){case"DETECTIVE":return(0,t.jsx)(i.RoleBadge.Detective,{tagline:r});case"MODERATOR":return null;case"LANGUAGE_JAMMER":return(0,t.jsx)(i.RoleBadge.LanguageJammer,{tagline:r});case"FEATURED":return(0,t.jsx)(i.RoleBadge.Featured,{tagline:r});case"ADMIN":return(0,t.jsx)(i.RoleBadge.Admin,{tagline:r});case"REPLIT_REP":return(0,t.jsx)(i.RoleBadge.ReplitRep,{tagline:r});case"REPLIT_REP_EDU":return(0,t.jsx)(i.RoleBadge.ReplitRepEdu,{tagline:r});case"PATRON":return(0,t.jsx)(i.RoleBadge.Patron,{tagline:r});case"PYTHONISTA":return(0,t.jsx)(i.RoleBadge.Pythonista,{tagline:r});case"hacker":return(0,t.jsx)(i.RoleBadge.Hacker,{tagline:r});case"hacker_pro":return(0,t.jsx)(i.RoleBadge.Core,{});case"pro":return(0,t.jsx)(i.RoleBadge.Pro,{});default:return(0,t.jsx)(i.RoleBadge.Default,{tagline:r,name:s})}}])},21875,e=>{"use strict";var r=e.i(276385),t=e.i(871579),i=e.i(825419),s=e.i(488299),a=e.i(744006),n=e.i(8047),l=e.i(449859),o=e.i(61732);let u={[l.RUIUserRoles.Admin]:"Admin",[l.RUIUserRoles.Moderator]:"Community Moderator",[l.RUIUserRoles.Teacher]:"Teacher",[l.RUIUserRoles.Student]:"Student"};e.s(["User",0,function({src:e,username:l,email:d,fullName:c,displayName:p,small:g,role:m,localRole:x,plan:h,className:f,style:R}){return(0,r.jsxs)(o.View,{row:!0,gap:8,align:"center",shrink:!0,className:f,style:R,children:[(0,r.jsx)(i.Avatar,{src:e,username:l??d,fullName:c,size:g?24:32,layout:"intrinsic"}),(0,r.jsxs)(o.View,{grow:!0,shrink:!0,row:!0,gap:4,align:"center",children:[void 0!==p?(0,r.jsxs)(o.View,{className:"UserInfo",gap:4,children:[(0,r.jsx)(n.Text,{multiline:!1,children:p}),(0,r.jsxs)(n.Text,{variant:"small",color:"dimmest",multiline:!1,translate:"no",children:[l?`@${l}`:"",d?`${d}`:""]})]}):(0,r.jsx)(n.Text,{multiline:!1,translate:"no",children:l}),void 0!==h&&(0,r.jsx)(s.IconButton,{alt:"plan subscriber",colorway:"primary",children:(0,r.jsx)(t.default,{})}),void 0!==m&&(0,r.jsx)(a.Pill,{colorway:"primary",text:u[m]}),void 0!==x&&(0,r.jsx)(a.Pill,{text:x})]})]})}])},276887,e=>{"use strict";var r=e.i(908796),t=e.i(569910),i=e.i(596139);e.s(["convertToSalesLedPlanNameIfApplicable",0,function(e,t){if(e===`Replit ${i.replitTeamsPlanName}`){if(t?.dealType===r.OrgDealType.Enterprise)return(0,i.getEnterprisePlanDisplayName)(!1);if(t?.dealType===r.OrgDealType.EnterpriseTrial)return(0,i.getEnterprisePlanDisplayName)(!0);if(t?.dealType===r.OrgDealType.Trial)return`Replit ${i.replitTeamsPlanName} Trial`}return e},"getFormattedOrgWorkspaceName",0,({isInOrg:e,ownerName:r,maxNameLength:t=20})=>{if(!r)return"Personal Workspace";let i=r.trim();return i.length>t&&!e?"Personal Workspace":e?`${i} Workspace`:`${i}'s Workspace`},"isCappedPlan",0,function(e){return e===r.PlanId.CoreV3||e===r.PlanId.Pro},"isEnterpriseOrg",0,function(e){return e?.dealType===r.OrgDealType.Enterprise||e?.dealType===r.OrgDealType.EnterpriseTrial},"orgGroupToDisplayName",0,function(e){switch(e){case r.SystemOrgGroupType.SystemAdmins:return"Admin";case r.SystemOrgGroupType.SystemMembers:return"Member";case r.SystemOrgGroupType.SystemGuests:return"Guest";case r.SystemOrgGroupType.SystemViewers:return"Viewer";default:(0,t.default)(e)}}])},842088,e=>{e.v({input:"OrgUpgradeRequestModal-module__AkvMRq__input"})},416004,938762,e=>{"use strict";var r=e.i(276385),t=e.i(389959),i=e.i(351623),s=e.i(299020),a=e.i(344480);e.i(975473);let n={},l=i.gql`
+    mutation CreateViewerUpgradeRequest($input: CreateViewerUpgradeRequestInput!) {
+  createViewerUpgradeRequest(input: $input) {
+    ... on ViewerUpgradeRequest {
+      id
+      status
+    }
+  }
+}
+    `;function o(e){let r={...n,...e};return s.useMutation(l,r)}let u=i.gql`
+    query OrgViewerUpgradeRequest($orgId: String!, $upgradeRequestInput: OrgUpgradeRequestInput!) {
+  currentUser {
+    id
+    org(orgId: $orgId) {
+      ... on Org {
+        id
+        upgradeRequest(input: $upgradeRequestInput) {
+          ... on ViewerUpgradeRequest {
+            id
+            status
+          }
+        }
+      }
+    }
+  }
+}
+    `;e.s(["OrgViewerUpgradeRequestDocument",0,u,"useCreateViewerUpgradeRequestMutation",0,o,"useOrgViewerUpgradeRequestQuery",0,function(e){let r={...n,...e};return a.useQuery(u,r)}],938762);var d=e.i(709485),c=e.i(151027),p=e.i(410458),g=e.i(415541),m=e.i(643484),x=e.i(528710),h=e.i(528326),f=e.i(8047),R=e.i(61732),w=e.i(842088);e.s(["default",0,({isOpen:e,orgName:i,orgId:s,onClose:a,onSuccess:n})=>{let[l,y]=(0,t.useState)(""),{scimViewerUpgradeLink:j}=(0,p.default)(s),_=j&&!!j.trim(),[T,{loading:v}]=o({onCompleted:()=>{n()}});return(0,t.useEffect)(()=>{e&&(0,g.track)(d.events.ORG_VIEWER_SEAT_UPGRADE_MODAL_VIEWED,{orgId:s,context:(0,c.getOrgTrackingContext)({id:s})})},[e,s]),(0,r.jsx)(h.Modal,{isOpen:e,onRequestClose:a,children:(0,r.jsxs)(R.View,{gap:16,children:[(0,r.jsx)(f.Text,{variant:"subheadDefault",children:_?"Upgrade Your Access":"Request a Member Seat"}),(0,r.jsx)(f.Text,{color:"dimmer",children:_?`Get full member access to ${i}'s Replit workspace by requesting an upgrade in your company ticketing system.`:`Send a request to your team's admin for full member access in ${i}'s Replit workspace.`}),_?(0,r.jsx)(f.Text,{color:"dimmer",children:"You'll be redirected to complete the upgrade process."}):(0,r.jsxs)(r.Fragment,{children:[(0,r.jsxs)(R.View,{gap:8,children:[(0,r.jsx)(f.Text,{children:"Add a message to your request (optional)"}),(0,r.jsx)(x.Input,{clsx:w.default.input,type:"text",value:l,onChange:e=>y(e.target.value),placeholder:"Tell your admin what you want to create on Replit"})]}),(0,r.jsx)(f.Text,{color:"dimmer",children:"Until they respond you will still have limited viewer access."})]}),(0,r.jsx)(R.View,{row:!0,justify:"end",children:(0,r.jsx)(m.Button,{text:_?"Go to upgrade page":"Request upgrade",colorway:"primary",variant:"default",loading:!_&&v,isDisabled:!_&&v,onClick:()=>{_?(window.open(j,"_blank"),(0,g.track)(d.events.ORG_VIEWER_SEAT_UPGRADE_REQUESTED,{orgId:s,context:(0,c.getOrgTrackingContext)({id:s}),customUpgradeLink:!0}),a()):(T({variables:{input:{orgId:s,requestReason:l}},refetchQueries:[u]}),(0,g.track)(d.events.ORG_VIEWER_SEAT_UPGRADE_REQUESTED,{orgId:s,context:(0,c.getOrgTrackingContext)({id:s}),customUpgradeLink:!1}))}})})]})})}],416004)},648552,e=>{"use strict";var r=e.i(389959),t=e.i(908796),i=e.i(672220),s=e.i(320216),a=e.i(151027),n=e.i(933302);e.s(["useOrgSwitcher",0,function(){let{showError:e}=(0,s.default)(),l=(0,n.useSyncStatsigOrgContext)(),o=(0,a.useSetOptimisticOrg)(),[u]=(0,i.useCurrentUserOrgContextUpdateOrgContextMutation)({refetchQueries:[{query:i.CurrentUserOrgContextDocument}],onCompleted(r){r.updateOrgContext&&"Org"!==r.updateOrgContext.__typename&&e("Something went wrong switching workspaces. Please try again.")},onError(){e("Something went wrong switching workspaces. Please try again.")}});return(0,r.useCallback)(e=>{let r=e.type===t.OrgstypeEnumType.Personal,i=r?{orgId:void 0,orgSlug:void 0,orgRole:void 0,orgDealContext:void 0}:{orgId:e.id,orgSlug:e.slug,orgRole:e.orgRole,orgDealContext:e.orgDealContext};l(i.orgId,r?void 0:e.orgDealContext.dealType),o(i),u({variables:{input:{orgId:i.orgId}}})},[l,o,u])}])},294827,e=>{"use strict";var r=e.i(908796),t=e.i(351623),i=e.i(344480);e.i(975473);let s={},a=t.gql`
+    fragment PersonalWorkspacesDisabledCurrentUser on CurrentUser {
+  id
+  personalWorkspacesDisabled
+}
+    `,n=t.gql`
+    query PersonalWorkspacesDisabled {
+  currentUser {
+    ...PersonalWorkspacesDisabledCurrentUser
+  }
+}
+    ${a}`;e.s(["usePersonalWorkspacesDisabled",0,function(){let e,{data:t}=(e={...s,...void 0},i.useQuery(n,e)),a=t?.currentUser,l=a?.personalWorkspacesDisabled??r.PersonalWorkspacesDisabledMode.None,o=l!==r.PersonalWorkspacesDisabledMode.None;return{shouldHidePersonalWorkspace:l===r.PersonalWorkspacesDisabledMode.Personal||l===r.PersonalWorkspacesDisabledMode.Full,restrictionMode:l,isRestrictedDomain:o}}],294827)},752533,e=>{e.v({dropdownAvatarAndName:"AvatarDropdown-module__n3A4ZW__dropdownAvatarAndName",dropdownItem:"AvatarDropdown-module__n3A4ZW__dropdownItem",dropdownItemSelected:"AvatarDropdown-module__n3A4ZW__dropdownItemSelected",orgNameText:"AvatarDropdown-module__n3A4ZW__orgNameText",overflowIndicator:"AvatarDropdown-module__n3A4ZW__overflowIndicator",sectionHeader:"AvatarDropdown-module__n3A4ZW__sectionHeader",workspaceContainerWrapper:"AvatarDropdown-module__n3A4ZW__workspaceContainerWrapper",workspaceDropdownContainer:"AvatarDropdown-module__n3A4ZW__workspaceDropdownContainer"})},795859,e=>{"use strict";var r=e.i(276385),t=e.i(914981),i=e.i(389959),s=e.i(908796),a=e.i(183035),n=e.i(320216),l=e.i(648552),o=e.i(294827),u=e.i(955410),d=e.i(448942),c=e.i(276887),p=e.i(406664),g=e.i(825419),m=e.i(744006),x=e.i(8047),h=e.i(61732),f=e.i(752533);let R=({currentUser:e,selected:t,onClick:i})=>{let s=(0,p.useCreateInteractive)({variant:"listItem"});return(0,r.jsxs)(h.View,{clsx:[s.clsx,t?f.default.dropdownItemSelected:f.default.dropdownItem],style:s.style,onClick:i,row:!0,align:"center",justify:t?"space-between":void 0,px:8,py:4,children:[(0,r.jsxs)(h.View,{clsx:f.default.dropdownAvatarAndName,row:!0,align:"center",gap:8,children:[(0,r.jsx)(g.Avatar,{src:e.image,username:e.username,fullName:e.fullName,size:20}),(0,r.jsx)(x.Text,{variant:"text",color:t?"default":"dimmer",multiline:!1,clsx:f.default.orgNameText,children:"Personal"})]}),(0,r.jsx)(h.View,{align:"center",row:!0,children:t?(0,r.jsx)(a.default,{size:16}):null})]})},w=({selected:e,org:i,currentOrgId:o,groupType:R,isNewPillStyle:w=!1,onRoute:y})=>{let j=(0,p.useCreateInteractive)({variant:"listItem"}),{showError:_}=(0,n.default)(),{trackClick:T}=(0,u.useTrackClick)(),v=(0,l.useOrgSwitcher)(),{name:k,slug:P}=i,{home:S}=(0,d.orgLinks)({slug:P}),U=(0,t.useRouter)();return(0,r.jsxs)(h.View,{clsx:[j.clsx,e?f.default.dropdownItemSelected:f.default.dropdownItem],style:j.style,onClick:()=>{e||T({productArea:"workspaces",target:"switch_workspace_item",properties:{previous_workspace_type:o?"shared":"personal",target_workspace_type:"shared"}}),i.currentUserRole?(v({type:s.OrgType.Team,id:i.id,slug:i.slug,orgRole:i.currentUserRole,orgDealContext:i.dealContext}),y()):_("Something went wrong, please try again."),U.push(S.href)},row:!0,align:"center",justify:e?"space-between":void 0,px:8,py:4,children:[(0,r.jsxs)(h.View,{clsx:f.default.dropdownAvatarAndName,row:!0,align:"center",gap:8,children:[(0,r.jsx)(g.Avatar,{src:i.image??null,username:k,fullName:i.name,size:20}),(0,r.jsxs)(h.View,{row:!0,align:"center",gap:8,children:[(0,r.jsx)(x.Text,{variant:"text",color:e?"default":"dimmer",multiline:!1,translate:"no",clsx:f.default.orgNameText,children:k}),R&&w?(0,r.jsx)(m.Pill,{text:(0,c.orgGroupToDisplayName)(R),compact:!0}):null,R&&!w?(0,r.jsx)(x.Text,{variant:"small",color:"dimmest",children:(0,c.orgGroupToDisplayName)(R)}):null]})]}),(0,r.jsx)(h.View,{align:"center",row:!0,children:e?(0,r.jsx)(a.default,{size:16}):null})]})};e.s(["OrgDropdown",0,({currentUser:e,currentOrgId:a,loading:n=!1,hasOrgs:d=!1,onRoute:c})=>{let p=(0,t.useRouter)(),g=(0,i.useRef)(null),[m,y]=(0,i.useState)(!1),{shouldHidePersonalWorkspace:j}=(0,o.usePersonalWorkspacesDisabled)(),{trackClick:_}=(0,u.useTrackClick)(),T=(0,l.useOrgSwitcher)();return((0,i.useEffect)(()=>{let e=()=>{if(g.current){let{scrollHeight:e,clientHeight:r,scrollTop:t}=g.current;y(e>r&&!(t+r>=e-1))}};e(),window.addEventListener("resize",e);let r=g.current;return r&&r.addEventListener("scroll",e),()=>{window.removeEventListener("resize",e),r&&r.removeEventListener("scroll",e)}},[]),e?.orgs&&"CurrentUserOrganizationConnection"===e.orgs.__typename&&!n&&d)?(0,r.jsx)(r.Fragment,{children:(0,r.jsxs)(h.View,{children:[(0,r.jsx)(h.View,{clsx:f.default.sectionHeader,row:!0,align:"center",p:8,children:(0,r.jsx)(x.Text,{variant:"small",color:"dimmest",children:"Switch Workspace"})}),(0,r.jsxs)(h.View,{clsx:f.default.workspaceContainerWrapper,children:[(0,r.jsxs)(h.View,{innerRef:g,clsx:f.default.workspaceDropdownContainer,children:[j?null:(0,r.jsx)(R,{currentUser:e,selected:void 0===a,onClick:()=>{a&&_({productArea:"workspaces",target:"switch_workspace_item",properties:{previous_workspace_type:"shared",target_workspace_type:"personal"}}),T({type:s.OrgType.Personal}),p.push("/home","/~",{shallow:!1})}}),e.orgs.items.map(({org:e,type:t})=>(0,r.jsx)(w,{org:e,groupType:t,selected:e.id===a,currentOrgId:a,onRoute:c},e.id))]}),m?(0,r.jsx)(h.View,{clsx:f.default.overflowIndicator}):null]})]})}):null},"OrgDropdownItem",0,w,"PersonalDropdownItem",0,R])},970311,e=>{e.v({placeholder:"DefaultOrgIcon-module__jpmNua__placeholder"})},897395,644756,e=>{"use strict";var r=e.i(276385),t=e.i(389959),i=e.i(351623),s=e.i(85085),a=e.i(884033),n=e.i(344480);e.i(975473);let l={},o=i.gql`
+    query GetOwnerPillOrgs {
+  currentUser {
+    id
+    ...OrgSwitcherCurrentUser
+  }
+}
+    ${s.OrgSwitcherCurrentUserFragmentDoc}`;function u(e){let r={...l,...e};return n.useQuery(o,r)}let d=i.gql`
+    query GetOwnerPillWorkspaceDropdown {
+  currentUser {
+    ...WorkspaceDropdownCurrentUser
+  }
+}
+    ${a.WorkspaceDropdownCurrentUserFragmentDoc}`;function c(e){let r={...l,...e};return n.useQuery(d,r)}e.s(["GetOwnerPillOrgsDocument",0,o,"useGetOwnerPillOrgsQuery",0,u,"useGetOwnerPillWorkspaceDropdownQuery",0,c],644756);var p=e.i(167392),g=e.i(568430),m=e.i(269848),x=e.i(151027),h=e.i(612343),f=e.i(61732),R=e.i(970311);let w=()=>(0,r.jsx)(f.View,{align:"center",justify:"center",br:"full",clsx:R.default.placeholder,children:(0,r.jsx)(h.default,{size:12})});var y=e.i(276887),j=e.i(825419),_=e.i(643484),T=e.i(773222),v=e.i(795859),k=e.i(914981),P=e.i(908796),S=e.i(40916),U=e.i(596139),I=e.i(856010),D=e.i(648552),A=e.i(294827),C=e.i(955410);e.i(450717);var E=e.i(242917),b=e.i(480028),O=e.i(406664),M=e.i(919073),L=e.i(744006),W=e.i(8047),$=e.i(158323),N=e.i(752533);let V=({onClick:e,showCoreBadge:t=!1})=>{let i=(0,O.useCreateInteractive)({variant:"listItem"});return(0,r.jsxs)(f.View,{clsx:[i.clsx,N.default.dropdownItem],style:i.style,onClick:e,row:!0,align:"center",justify:t?"space-between":void 0,px:8,py:4,gap:16,children:[(0,r.jsxs)(f.View,{clsx:N.default.dropdownAvatarAndName,row:!0,align:"center",gap:8,children:[(0,r.jsx)(f.View,{row:!0,align:"center",justify:"center",px:2,children:(0,r.jsx)(S.default,{color:b.tokens.foregroundDimmest,size:16})}),(0,r.jsx)(W.Text,{variant:"text",color:"dimmer",multiline:!1,children:"Create workspace"})]}),t?(0,r.jsx)($.default,{plan:U.corePlanName,size:"small"}):null]})},q=({currentOrgId:e,onRoute:i,currentUser:s,onlyUnifiedPlanEnabled:a=!1})=>{let n=(0,k.useRouter)(),l=(0,t.useRef)(null),[o,u]=(0,t.useState)(!1),{shouldHidePersonalWorkspace:d}=(0,A.usePersonalWorkspacesDisabled)(),{show:c}=(0,E.useGlobalModal)(),{trackClick:p}=(0,C.useTrackClick)(),g=(0,D.useOrgSwitcher)();(0,t.useEffect)(()=>{let e=()=>{if(l.current){let{scrollHeight:e,clientHeight:r,scrollTop:t}=l.current;u(e>r&&!(t+r>=e-1))}};return e(),window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[s]);let m=(0,I.useIsUnifiedPlanEnabled)({currentUser:s}),x=(e,r)=>{if(p({productArea:"workspaces",target:"open_create_workspace_modal_button",properties:{canCreateWorkspace:r}}),m&&!r){i(),c("MembershipPurchaseModal",{analyticsContext:{upgrade:{context:"header_avatar"}}});return}i(),c("CreateWorkspaceModal",{customerId:e})};(0,t.useEffect)(()=>{let e=()=>{if(l.current){let{scrollHeight:e,clientHeight:r,scrollTop:t}=l.current;u(e>r&&!(t+r>=e-1))}},r=l.current;if(r)return r.addEventListener("scroll",e),()=>r.removeEventListener("scroll",e)},[s]);let h=s.customer.orgs;if("OrgConnection"!==h.__typename||"CustomerConnection"!==s.customers.__typename)return null;let R=s.customers.items.filter(e=>e.id!==s.customer.id&&(!a||e.isUnifiedPlanEnabled));return(0,r.jsx)(r.Fragment,{children:(0,r.jsxs)(f.View,{clsx:N.default.workspaceContainerWrapper,children:[(0,r.jsxs)(f.View,{innerRef:l,clsx:N.default.workspaceDropdownContainer,children:[!a||m?(0,r.jsxs)(r.Fragment,{children:[d?null:(0,r.jsx)(f.View,{clsx:N.default.sectionHeader,row:!0,align:"center",p:8,children:(0,r.jsx)(W.Text,{variant:"small",color:"dimmest",children:"Your workspaces"})}),d?null:(0,r.jsx)(v.PersonalDropdownItem,{currentUser:s,selected:void 0===e,onClick:()=>{e&&p({productArea:"workspaces",target:"switch_workspace_item",properties:{previous_workspace_type:"shared",target_workspace_type:"personal"}}),g({type:P.OrgType.Personal}),n.push("/home","/~",{shallow:!1})}}),h.items.map(t=>(0,r.jsx)(v.OrgDropdownItem,{org:t,selected:t.id===e,currentOrgId:e,isNewPillStyle:!0,onRoute:i},t.id)),s.customer.isUnifiedPlanEnabled&&!d&&s.customer.authorizations.createWorkspace.code!==P.CustomerAuthorizationCode.ScimEnabled&&s.customer.authorizations.createWorkspace.code!==P.CustomerAuthorizationCode.WorkosEnabled?(0,r.jsx)(V,{onClick:()=>x(s.customer.id,s.customer.authorizations.createWorkspace.isAuthorized),showCoreBadge:!s.customer.authorizations.createWorkspace.isAuthorized}):null]}):null,R.map(t=>{if("OrgConnection"!==t.orgs.__typename)return null;let s=t.orgs.items,a=t.name?.trim()||"",n=t.authorizations.createWorkspace.isAuthorized;return(0,r.jsxs)(M.ShadesSurface,{elevate:!1,border:{side:"top"},background:!1,children:[a?(0,r.jsxs)(f.View,{clsx:N.default.sectionHeader,row:!0,align:"center",gap:8,p:8,children:[(0,r.jsx)(W.Text,{variant:"small",color:"dimmest",children:a}),n?(0,r.jsx)(L.Pill,{text:"Admin",compact:!0}):null]}):null,s.map(t=>(0,r.jsx)(v.OrgDropdownItem,{org:t,selected:t.id===e,currentOrgId:e,groupType:!n&&t.currentUserRole?t.currentUserRole:void 0,isNewPillStyle:!0,onRoute:i},t.id)),n&&t.isUnifiedPlanEnabled?(0,r.jsx)(V,{onClick:()=>x(t.id,n)}):null]},t.id)})]}),o?(0,r.jsx)(f.View,{clsx:N.default.overflowIndicator}):null]})})};e.s(["OwnerPill",0,function({ownerName:e,image:i,currentOrgId:s,isNewDesignEnabled:a=!1,loading:n=!1,onlyUnifiedPlanEnabled:l,alignment:o,stretch:d}){let h,[f,R]=(0,t.useState)(!1),k=(0,x.useCurrentUserStoredOrgContext)(),P=!a,{data:S}=u({skip:!P}),{data:U}=c({skip:P,fetchPolicy:"cache-and-network",ssr:!1});if(P&&!S)return null;let I=S?.currentUser,D=I?.orgs,A=D?.__typename==="CurrentUserOrganizationConnection"?D.items:[];if(P&&(!I||D?.__typename!=="CurrentUserOrganizationConnection")||P&&!A.length)return null;let C=(0,r.jsx)(j.Avatar,{src:i??null,username:e,size:24}),E=(0,y.getFormattedOrgWorkspaceName)({ownerName:e,isInOrg:!!s});return h=!P&&U?.currentUser?(0,r.jsx)(q,{currentOrgId:k.orgId,currentUser:U.currentUser,onRoute:()=>{R(!1)},onlyUnifiedPlanEnabled:l}):P&&I?(0,r.jsx)(v.OrgDropdown,{currentUser:I,currentOrgId:k.orgId,loading:!1,hasOrgs:A.length>0,onRoute:()=>{R(!1)}}):(0,r.jsx)(r.Fragment,{}),(0,r.jsxs)(T.PopoverTrigger,{isOpen:f,onOpenChange:R,placement:"bottom",label:"Switch Workspace",style:{marginLeft:"-6px"},children:[(0,r.jsx)(_.Button,{style:{paddingLeft:4},borderRadius:"full",iconLeft:n?(0,r.jsx)(m.default,{}):s?i?C:(0,r.jsx)(w,{}):C,iconRight:f?(0,r.jsx)(g.default,{}):(0,r.jsx)(p.default,{}),text:n?"":E,loading:n,alignment:o,stretch:d}),h]})}],897395)},374652,e=>{"use strict";var r=e.i(135173),t=e.i(480028);e.s(["getBorderColor",0,({replCount:e,limit:i=r.STARTER_PLAN_REPL_LIMIT})=>e/i>=.25?t.tokens.blueDimmest:t.tokens.greyDimmest,"getFillColor",0,({replCount:e,limit:i=r.STARTER_PLAN_REPL_LIMIT})=>e/i>=.25?t.tokens.blueDimmer:t.tokens.greyDimmer])},882263,e=>{"use strict";var r=e.i(351623),t=e.i(344480);e.i(975473);let i={},s=r.gql`
+    query GetCloudFreeUsage {
+  currentUser {
+    id
+    cloudFreeUsageLimits {
+      ... on FreemiumCloudUsageLimits {
+        usage
+        limit
+        nextCreditsAt
+      }
+      ... on Error {
+        message
+      }
+    }
+  }
+}
+    `;e.s(["useGetCloudFreeUsage",0,function({skip:e}={}){var r;let a,{data:n,loading:l,error:o,refetch:u}=(r={skip:e},a={...i,...r},t.useQuery(s,a));return{loading:l,error:o,cloudUsage:n?.currentUser?.cloudFreeUsageLimits.__typename==="FreemiumCloudUsageLimits"?n?.currentUser?.cloudFreeUsageLimits:void 0,refetch:u}}],882263)},90397,e=>{e.v({icon:"PlanUsageMeter-module__klJjbG__icon",meterWrapper:"PlanUsageMeter-module__klJjbG__meterWrapper",title:"PlanUsageMeter-module__klJjbG__title",usageString:"PlanUsageMeter-module__klJjbG__usageString"})},22834,e=>{"use strict";var r=e.i(276385),t=e.i(389959),i=e.i(480028),s=e.i(8047),a=e.i(244945),n=e.i(61732),l=e.i(90397);e.s(["UsageMeterWrapper",0,({icon:e,usageString:i,title:o,tooltip:u,children:d})=>(0,r.jsxs)(n.View,{grow:!0,row:!0,gap:8,align:"center",children:[(0,r.jsx)(n.View,{clsx:l.default.icon,children:(0,t.cloneElement)(e,{className:l.default.icon})}),(0,r.jsxs)(n.View,{grow:!0,gap:2,children:[(0,r.jsx)(s.Text,{height:"singleLine",color:"dimmer",className:l.default.title,children:o}),(0,r.jsx)(n.View,{row:!0,align:"center",gap:4,children:(0,r.jsx)(s.Text,{color:"dimmest",height:"singleLine",className:l.default.usageString,children:i})})]}),(0,r.jsx)(n.View,{clsx:l.default.meterWrapper,children:u?(0,r.jsx)(a.Tooltip,{tooltip:u,children:d}):d})]}),"getPercentageBorderColor",0,function({decimal:e}){return e>.25?i.tokens.blueDimmest:i.tokens.greyDimmest},"getPercentageFillColor",0,function({decimal:e}){return e>.25?i.tokens.blueDimmer:i.tokens.greyDimmer}])},999529,e=>{e.v({fontMedium:"PlanUsageMonitor-module__4qxt2q__fontMedium",header:"PlanUsageMonitor-module__4qxt2q__header"})},765269,e=>{"use strict";var r=e.i(276385),t=e.i(596139),i=e.i(135173),s=e.i(3466),a=e.i(929773),n=e.i(934440),l=e.i(882263),o=e.i(8047),u=e.i(61732),d=e.i(103490),c=e.i(480028),p=e.i(462229),g=e.i(691636),m=e.i(201894),x=e.i(22834);let h=(0,p.cssRecord)({measureBar:[g.rcss.height(10),g.rcss.borderRadius(2),g.rcss.overflow("visible")],measureBarProgress:[g.rcss.borderRadius(2),{marginTop:-1,marginLeft:-1,boxSizing:"content-box"}]}),f=({used:e=0,quota:t=1,loading:i})=>{let s=Math.min(1,e/t);return(0,r.jsx)(x.UsageMeterWrapper,{title:"Agent credits",icon:(0,r.jsx)(d.default,{}),usageString:i?"Loading...":`${Math.floor(100*s)}% used`,children:(0,r.jsx)(m.MeasureBar,{className:"measureBar",total:1,tooltipHidden:!0,current:s,loading:i,css:[h.measureBar,{".measureBarProgress":[g.rcss.border({color:(0,x.getPercentageBorderColor)({decimal:s})}),h.measureBarProgress]}],color:(0,x.getPercentageFillColor)({decimal:s}),backgroundColor:c.tokens.backgroundHigher})})};var R=e.i(490262);let w=(0,p.cssRecord)({measureBar:[g.rcss.height(10),g.rcss.borderRadius(2),g.rcss.overflow("visible")],measureBarProgress:[g.rcss.borderRadius(2),{marginTop:-1,marginLeft:-1,boxSizing:"content-box"}]}),y=({used:e=0,quota:t=1,loading:i})=>{let s=Math.min(1,e/t);return(0,r.jsx)(x.UsageMeterWrapper,{title:"Cloud credits",icon:(0,r.jsx)(R.default,{}),usageString:i?"Loading...":`${Math.floor(100*s)}% used`,children:(0,r.jsx)(m.MeasureBar,{className:"measureBar",total:1,tooltipHidden:!0,current:s,loading:i,css:[w.measureBar,{".measureBarProgress":[g.rcss.border({color:(0,x.getPercentageBorderColor)({decimal:s})}),w.measureBarProgress]}],color:(0,x.getPercentageFillColor)({decimal:s}),backgroundColor:c.tokens.backgroundHigher})})};var j=e.i(919073),_=e.i(108431);let T=2/3,v=({publicRepls:e,agentUsage:s,showReplsLimit:n=!0,showAgentUsage:l=!0})=>{let o,d=(0,a.useReplLimit)(),c="data"===d.type?d.starterPlanReplLimit:i.STARTER_PLAN_REPL_LIMIT,p=(o=[],n&&o.push({type:"Apps",percentage:e/c}),l&&o.push({type:`${t.freePlanName} plan usage`,percentage:s}),o),g=p.filter(e=>e.percentage>1),m=p.filter(e=>1===e.percentage),x=p.filter(e=>e.percentage>=.85&&e.percentage<1),h=p.filter(e=>e.percentage>=T&&e.percentage<.85),f=null;return g.length>0?f=(0,r.jsx)(j.ShadesSurface,{colorShade:"themeError",br:"container",children:(0,r.jsx)(_.StatusBanner,{text:"You've exceeded your usage limit"})}):m.length>0?f=(0,r.jsx)(j.ShadesSurface,{colorShade:"themeError",br:"container",children:(0,r.jsx)(_.StatusBanner,{text:"You've reached your usage limit"})}):x.length>0?f=(0,r.jsx)(j.ShadesSurface,{colorShade:"themeBrandInverted",br:"container",children:(0,r.jsx)(_.StatusBanner,{text:"You're nearing your usage limit"})}):h.length>0&&(f=(0,r.jsx)(j.ShadesSurface,{colorShade:"themeWarning",br:"container",children:(0,r.jsx)(_.StatusBanner,{text:"Approaching your usage limit"})})),f?(0,r.jsx)(u.View,{pb:4,children:f}):null};var k=e.i(806930),P=e.i(374652);let S=(0,p.cssRecord)({measureBar:[g.rcss.height(10),g.rcss.borderRadius(2),g.rcss.overflow("visible"),{pointerEvents:"none"}],measureBarProgress:[g.rcss.borderRadius(2),{marginTop:-1,marginLeft:-1,boxSizing:"content-box"}]}),U=({publicRepls:e,loading:t})=>{let s=e??0,n=(0,a.useReplLimit)(),l="data"===n.type?n.starterPlanReplLimit:i.STARTER_PLAN_REPL_LIMIT;return(0,r.jsx)(x.UsageMeterWrapper,{title:"Free Apps",tooltip:`You can create ${Math.max(0,l-s)} more Apps for free. Upgrade to create unlimited Public and Private Apps.`,icon:(0,r.jsx)(k.default,{}),usageString:t?"Loading...":`${s}/${l} created`,children:(0,r.jsx)(m.MeasureBar,{total:l,current:s,loading:t,color:(0,P.getFillColor)({replCount:s,limit:l}),tooltipHidden:!0,css:[S.measureBar,{".measureBarProgress":[g.rcss.border({color:(0,P.getBorderColor)({replCount:s,limit:l})}),S.measureBarProgress]}],backgroundColor:c.tokens.backgroundHigher})})};var I=e.i(999529);let D=({publicRepls:e,replsLimitLoading:i,agentUsage:a,showReplsLimit:n=!0,showAgentUsage:l=!0,cloudUsage:d,upgradeButtonColorway:c="primary"})=>{let p=0;return a?.usage!==void 0&&a?.limit!==void 0&&a.limit>0&&(p=a.usage/a.limit),(0,r.jsxs)(u.View,{px:12,pt:12,pb:12,gap:8,children:[(0,r.jsx)(u.View,{row:!0,justify:"space-between",align:"center",pb:4,clsx:I.default.header,children:(0,r.jsx)(o.Text,{className:I.default.fontMedium,color:"dimmer",height:"singleLine",children:"Your Starter Plan"})}),(0,r.jsx)(v,{publicRepls:e,agentUsage:p,showReplsLimit:n,showAgentUsage:l}),(0,r.jsxs)(u.View,{pb:4,gap:8,children:[n?(0,r.jsx)(U,{publicRepls:e,loading:i}):null,l?(0,r.jsx)(f,{used:a?.usage,quota:a?.limit,loading:a.loading}):null]}),(0,r.jsx)(u.View,{pb:4,gap:8,children:(0,r.jsx)(y,{used:d?.usage,quota:d?.limit,loading:d.loading})}),(0,r.jsx)(s.default,{dataCy:"sidebar-upgrade-btn",context:"sidebar",text:`Upgrade to Replit ${t.corePlanName}`,colorway:c,variant:"default",modalHeadingText:`Upgrade to Replit ${t.corePlanName}`,redirectPath:"/home"})]})};e.s(["PlanUsageMonitorUI",0,D,"default",0,()=>{let e,t,s=(0,a.useReplLimit)(),o="loading"===s.type,{agentUsage:u,agentUsageV2:d,loading:c}=(0,n.useGetAgentFreeUsage)(),{cloudUsage:p,loading:g}=(0,l.useGetCloudFreeUsage)(),m="data"===s.type?s.replCount:0,x=m/("data"===s.type?s.starterPlanReplLimit:i.STARTER_PLAN_REPL_LIMIT);return d?(e=d.usage,t=d.limit):(e=u?.usage,t=u?.limit),(0,r.jsx)(D,{agentUsage:{usage:e,limit:t,loading:c},publicRepls:m,replsLimitLoading:o,showReplsLimit:x>=.25,cloudUsage:{usage:p?.usage,limit:p?.limit,loading:g}})}],765269)},266883,e=>{"use strict";let r=/^[A-Za-z]:\//;function t(e=""){return e?e.replace(/\\/g,"/").replace(r,e=>e.toUpperCase()):e}let i=/^[/\\]{2}/,s=/^[/\\](?![/\\])|^[/\\]{2}(?!\.)|^[A-Za-z]:[/\\]/,a=/^[A-Za-z]:$/,n=/.(\.[^./]+|\.)$/,l=function(e){if(0===e.length)return".";let r=(e=t(e)).match(i),s=o(e),n="/"===e[e.length-1];return 0===(e=function(e,r){let t="",i=0,s=-1,a=0,n=null;for(let l=0;l<=e.length;++l){if(l<e.length)n=e[l];else if("/"===n)break;else n="/";if("/"===n){if(s===l-1||1===a);else if(2===a){if(t.length<2||2!==i||"."!==t[t.length-1]||"."!==t[t.length-2]){if(t.length>2){let e=t.lastIndexOf("/");-1===e?(t="",i=0):i=(t=t.slice(0,e)).length-1-t.lastIndexOf("/"),s=l,a=0;continue}else if(t.length>0){t="",i=0,s=l,a=0;continue}}r&&(t+=t.length>0?"/..":"..",i=2)}else t.length>0?t+=`/${e.slice(s+1,l)}`:t=e.slice(s+1,l),i=l-s-1;s=l,a=0}else"."===n&&-1!==a?++a:a=-1}return t}(e,!s)).length?s?"/":n?"./":".":(n&&(e+="/"),a.test(e)&&(e+="/"),r)?s?`//${e}`:`//./${e}`:s&&!o(e)?`/${e}`:e},o=function(e){return s.test(e)};e.s(["d",0,function(e){let r=t(e).replace(/\/$/,"").split("/").slice(0,-1);return 1===r.length&&a.test(r[0])&&(r[0]+="/"),r.join("/")||(o(e)?"/":".")},"e",0,function(e){if(".."===e)return"";let r=n.exec(t(e));return r&&r[1]||""},"j",0,function(...e){let r="";for(let t of e)if(t)if(r.length>0){let e="/"===r[r.length-1],i="/"===t[0];e&&i?r+=t.slice(1):r+=e||i?t:`/${t}`}else r+=t;return l(r)}])},66982,e=>{"use strict";var r=e.i(276385),t=e.i(389959),i=e.i(480028);e.s(["ExactMatchSubString",0,({source:e,match:t})=>{if(!e.toLowerCase().includes(t.toLowerCase()))return(0,r.jsx)(r.Fragment,{children:e});let[i,s]=e.split(RegExp(`${t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}(.+)?`,"i"));return(0,r.jsx)(r.Fragment,{children:[i,(0,r.jsx)("b",{children:e.substr(i.length,t.length)},t),s]})},"HighlightMatches",0,({source:e,matches:s,matchStyle:a={fontWeight:500,color:i.tokens.foregroundDefault},style:n={color:i.tokens.foregroundDimmest,maxWidth:"100%",wordWrap:"break-word"}})=>{let l,o=0,u=[],d=function(e){return(0,r.jsx)("span",{style:a,children:e})};return s.forEach(({column:r,length:t})=>{u.push(e.slice(o,r)),u.push(d(e.slice(r,r+t))),o=r+t}),u.push(e.slice(o)),l=u.map((e,i)=>(0,r.jsx)(t.Fragment,{children:e},i)),(0,r.jsx)("span",{style:n,children:l})}])},402841,e=>{"use strict";e.s(["REPL_DESCRIPTION_MAX_LENGTH",0,1e3])},748538,e=>{"use strict";var r=e.i(351623),t=e.i(299020);let i={},s=r.gql`
+    fragment EditReplFormRepl on Repl {
+  id
+  title
+  description
+  imageUrl
+  iconUrl
+  templateInfo {
+    iconUrl
+    imageUrl
+  }
+  authorizations {
+    editMetadata {
+      isAuthorized
+      code
+      message
+    }
+  }
+}
+    `,a=r.gql`
+    mutation EditReplFormEdit($input: UpdateReplInput!) {
+  updateRepl(input: $input) {
+    repl {
+      id
+      ...EditReplFormRepl
+    }
+  }
+}
+    ${s}`;e.s(["EditReplFormReplFragmentDoc",0,s,"useEditReplFormEditMutation",0,function(e){let r={...i,...e};return t.useMutation(a,r)}])},517414,317349,781258,80593,e=>{"use strict";var r=e.i(351623),t=e.i(299020);let i={},s=r.gql`
+    fragment DeleteReplDialogRepl on Repl {
+  id
+  title
+}
+    `,a=r.gql`
+    mutation DeleteReplDialogReplDelete($id: String!) {
+  deleteRepl(id: $id) {
+    id
+  }
+}
+    `;e.s(["DeleteReplDialogReplFragmentDoc",0,s,"useDeleteReplDialogReplDeleteMutation",0,function(e){let r={...i,...e};return t.useMutation(a,r)}],317349);var n=e.i(748538),l=e.i(344480);e.i(975473);let o={},u=r.gql`
+    fragment TransferReplToOrgDialogRepl on Repl {
+  id
+  title
+  slug
+  owner {
+    ... on User {
+      id
+      username
+    }
+    ... on Team {
+      id
+      username
+    }
+  }
+}
+    `,d=r.gql`
+    query TransferReplToOrgDialogOrgs {
+  currentUser {
+    id
+    orgs(count: 30) {
+      __typename
+      ... on CurrentUserOrganizationConnection {
+        items {
+          org {
+            id
+            name
+            slug
+            image
+            type
+          }
+          type
+        }
+      }
+      ... on Error {
+        message
+      }
+    }
+  }
+}
+    `,c=r.gql`
+    mutation TransferReplToOrgDialogTransfer($orgId: String!, $replIds: [String!]!) {
+  transferReplToOrganization(input: {orgId: $orgId, replIds: $replIds}) {
+    ... on TransferReplToOrganizationSuccess {
+      runId
+      results {
+        replId
+        success
+        error
+      }
+      successCount
+      errorCount
+    }
+    ... on UnauthorizedError {
+      message
+    }
+    ... on UserError {
+      message
+    }
+    ... on TooManyRequestsError {
+      message
+    }
+  }
+}
+    `;e.s(["TransferReplToOrgDialogReplFragmentDoc",0,u,"useTransferReplToOrgDialogOrgsQuery",0,function(e){let r={...o,...e};return l.useQuery(d,r)},"useTransferReplToOrgDialogTransferMutation",0,function(e){let r={...o,...e};return t.useMutation(c,r)}],781258);let p={},g=r.gql`
+    fragment LeaveMultiplayerReplDialogRepl on Repl {
+  id
+  title
+}
+    `,m=r.gql`
+    mutation LeaveMultiplayerReplDialogRemove($id: String!) {
+  removeSharedRepl(replId: $id) {
+    id
+  }
+}
+    `;e.s(["LeaveMultiplayerReplDialogReplFragmentDoc",0,g,"useLeaveMultiplayerReplDialogRemoveMutation",0,function(e){let r={...p,...e};return t.useMutation(m,r)}],80593);let x={},h=r.gql`
+    fragment ComponentsReplActions on Repl {
+  id
+  url
+  title
+  slug
+  user {
+    id
+    username
+  }
+  ...DeleteReplDialogRepl
+  ...EditReplFormRepl
+  ...TransferReplToOrgDialogRepl
+  ...LeaveMultiplayerReplDialogRepl
+  owner {
+    __typename
+    ... on Team {
+      id
+    }
+    ... on User {
+      id
+    }
+  }
+  org {
+    id
+  }
+  isStarred
+  isCurrentUserStarred
+  isStackTemplate
+  authorizations {
+    deleteRepl {
+      isAuthorized
+    }
+    editFolder {
+      isAuthorized
+    }
+    fork {
+      isAuthorized
+    }
+    removeSelf {
+      isAuthorized
+    }
+    star {
+      isAuthorized
+    }
+  }
+}
+    ${s}
+${n.EditReplFormReplFragmentDoc}
+${u}
+${g}`,f=r.gql`
+    mutation ReplActionsUpdateRepl($input: UpdateReplInput!) {
+  updateRepl(input: $input) {
+    repl {
+      id
+      isStarred
+    }
+  }
+}
+    `,R=r.gql`
+    mutation ReplActionsToggleReplPin($input: ToggleReplPinInput!) {
+  toggleReplPin(input: $input) {
+    ... on Repl {
+      id
+      isCurrentUserStarred
+    }
+    ... on Error {
+      message
+    }
+  }
+}
+    `,w=r.gql`
+    mutation AddOrgStackTemplate($orgId: String!, $replId: String!, $order: Float) {
+  addOrgStackTemplate(orgId: $orgId, replId: $replId, order: $order) {
+    success
+    message
+    repl {
+      id
+      isStackTemplate
+    }
+  }
+}
+    `,y=r.gql`
+    mutation RemoveOrgStackTemplate($orgId: String!, $replId: String!) {
+  removeOrgStackTemplate(orgId: $orgId, replId: $replId) {
+    success
+    message
+    repl {
+      id
+      isStackTemplate
+    }
+  }
+}
+    `,j=r.gql`
+    mutation ReplActionsMoveToFolder($replIds: [String!]!, $folderIds: [String!]!, $destFolderId: String!) {
+  moveItemsToFolder(
+    replIds: $replIds
+    folderIds: $folderIds
+    destFolderId: $destFolderId
+  ) {
+    ... on Repl {
+      __typename
+      id
+      folderId
+    }
+  }
+}
+    `;e.s(["ComponentsReplActionsFragmentDoc",0,h,"useAddOrgStackTemplateMutation",0,function(e){let r={...x,...e};return t.useMutation(w,r)},"useRemoveOrgStackTemplateMutation",0,function(e){let r={...x,...e};return t.useMutation(y,r)},"useReplActionsMoveToFolderMutation",0,function(e){let r={...x,...e};return t.useMutation(j,r)},"useReplActionsToggleReplPinMutation",0,function(e){let r={...x,...e};return t.useMutation(R,r)},"useReplActionsUpdateReplMutation",0,function(e){let r={...x,...e};return t.useMutation(f,r)}],517414)},145275,e=>{e.v({paginationRow:"IndexPagination-module__t95pHW__paginationRow",surface:"IndexPagination-module__t95pHW__surface"})},222826,e=>{"use strict";var r=e.i(276385),t=e.i(389959),i=e.i(656077),s=e.i(927600),a=e.i(269848),n=e.i(919073),l=e.i(488299),o=e.i(334353),u=e.i(8047),d=e.i(61732),c=e.i(145275);e.s(["default",0,({currentPage:e,pageSize:p,totalItems:g,goToNextPage:m,goToPreviousPage:x})=>{let{loading:h}=(0,t.useContext)(o.IndexContext),f=Math.max(Math.ceil(g/p),1),R=(0,t.useRef)(null),w=(0,t.useRef)(40);return(0,t.useLayoutEffect)(()=>{R.current&&(w.current=R.current.offsetHeight+1)},[R]),(0,r.jsx)(n.ShadesSurface,{clsx:c.default.surface,style:{minHeight:w.current},innerRef:R,elevate:!1,children:(0,r.jsx)(d.View,{clsx:c.default.paginationRow,row:!0,gap:8,p:8,align:"center",justify:"center",children:h?(0,r.jsx)(a.default,{}):(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(l.IconButton,{alt:"Previous page",disabled:0===e,onClick:x,children:(0,r.jsx)(i.default,{})}),(0,r.jsxs)(u.Text,{variant:"small",color:"dimmer",children:["Page ",e+1," of ",f]}),(0,r.jsx)(l.IconButton,{alt:"Next page",disabled:e>=f-1,onClick:m,children:(0,r.jsx)(s.default,{})})]})})})}])},33602,e=>{"use strict";var r,t=e.i(908796),i=e.i(462229),s=e.i(691636),a=e.i(127384);let n=(0,i.cssRecord)({pageHeader:[s.rcss.flex.row,s.rcss.justify.spaceBetween,s.rcss.align.center],pageHeaderOrgName:[s.rcss.maxWidth(240)],pageHeaderActions:[s.rcss.rowWithGap(8),s.rcss.align.center],pageTitle:[s.rcss.rowWithGap(8),s.rcss.align.center,s.rcss.flex.growAndShrink(1)],pageTitleText:[s.rcss.maxWidth("100%"),s.rcss.flex.growAndShrink(1)],pageContent:[s.rcss.colWithGap(32)],pageSection:[s.rcss.colWithGap(12)],pageSidebarOffset:[{paddingLeft:a.SIDEBAR_WIDTH}],sidebarSectionHeaderText:[s.rcss.p(8),s.rcss.px(16),{fontWeight:500}],indexTableWrapper:[s.rcss.display.flex,s.rcss.position.relative,s.rcss.justify.spaceBetween,s.rcss.overflow("auto"),s.rcss.width("100%")],onboardingSurface:[s.rcss.p(12),s.rcss.borderRadius(),s.rcss.border()],tooltipWrapper:[s.rcss.rowWithGap(8),s.rcss.align.center],searchBar:[s.rcss.maxWidth(400)]});t.SystemOrgGroupType.SystemAdmins,t.SystemOrgGroupType.SystemMembers,t.SystemOrgGroupType.SystemGuests;var l=((r={}).Index="Index",r.OrgGroup="OrgGroup",r);e.s(["NUM_ORGS_PER_PAGE",0,20,"SidebarType",()=>l,"orgStyles",0,n,"sortSystemGroups",0,e=>[t.Org_GroupstypeEnumType.SystemAdmins,t.Org_GroupstypeEnumType.SystemMembers,t.Org_GroupstypeEnumType.SystemGuests].reduce((r,t)=>{let i=e.find(e=>e.type===t);return i&&r.push(i),r},[])])},906595,e=>{e.v({root:"ReplResult-module__xjVmeG__root"})},407617,e=>{"use strict";var r=e.i(276385),t=e.i(421376),i=e.i(389959),s=e.i(2001),a=e.i(595996),n=e.i(480028),l=e.i(61732),o=e.i(618457),u=e.i(921125),d=e.i(906595);let c=(0,n.cvarsFrom)("ReplResult.module.css",["--height"]);function p({repl:e,height:n,isActive:g,searchQuery:m}){let{title:x}=e,h=(0,i.useMemo)(()=>m?s.default.match(m,x):null,[m,x]);return(0,r.jsx)(t.default,{...(0,u.replLinkProps)(e),children:(0,r.jsxs)(l.View,{clsx:d.default.root,row:!0,gap:6,px:6,style:{[c.height]:n+"px"},align:"center",children:[(0,r.jsx)(a.default,{alt:e.title,size:32,iconUrl:e.iconUrl}),(0,r.jsx)(l.View,{grow:!0,shrink:!0,gap:2,translate:"no",children:(0,r.jsx)(o.HighlightMatches,{text:e.title,highlight:h?.ranges,dimmed:!g})})]})})}e.s(["ReplResult",0,p,"toReplResult",0,function(e,t,i){var s,n;return{match:(s=e,n=t,()=>({score:1,render:{height:44,content:(0,r.jsx)(p,{repl:n,height:44,searchQuery:s})}})),data:{type:"action",label:t.title,icon:(0,r.jsx)(a.default,{alt:t.title,size:16,iconUrl:t.iconUrl}),run:()=>i(t)}}}])}]);
+
+//# debugId=25c574d3-127f-d96d-259c-2b4b65751e24
+//# sourceMappingURL=13clvc9ek86wj.js.map
