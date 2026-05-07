@@ -1,0 +1,627 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="64af0eb0-6467-c5b4-b2c3-ac5b21a9b8f0")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,300340,e=>{e.v({permissionDeniedContent:"SettingsTabContent-module__MGOYlG__permissionDeniedContent",permissionDeniedDescription:"SettingsTabContent-module__MGOYlG__permissionDeniedDescription",permissionDeniedRoot:"SettingsTabContent-module__MGOYlG__permissionDeniedRoot",tabContent:"SettingsTabContent-module__MGOYlG__tabContent"})},248146,e=>{e.v({content:"UniversalSettingsContentArea-module__bZEcFa__content"})},626425,565848,e=>{"use strict";var t=e.i(276385),i=e.i(698761),r=e.i(830675),s=e.i(995691),n=e.i(416298),a=e.i(569910),l=e.i(619297);e.i(214847);var o=e.i(864300),d=e.i(643484),c=e.i(8047),u=e.i(61732),g=e.i(775702),m=e.i(300340);let x=new WeakSet,h=()=>{let e=(0,o.useIntl)();return(0,t.jsx)(u.View,{clsx:m.default.permissionDeniedRoot,p:32,children:(0,t.jsxs)(u.View,{clsx:m.default.permissionDeniedContent,children:[(0,t.jsx)(n.default,{size:48}),(0,t.jsx)(c.Header,{level:2,variant:"headerDefault",children:e.formatMessage({id:"settings.chunkLoadError",defaultMessage:"Something went wrong"})}),(0,t.jsx)(c.Text,{clsx:m.default.permissionDeniedDescription,color:"dimmer",children:e.formatMessage({id:"settings.chunkLoadErrorDescription",defaultMessage:"This section failed to load, likely due to an update. Reload the page to get the latest version."})}),(0,t.jsx)(d.Button,{text:e.formatMessage({id:"settings.reloadPage",defaultMessage:"Reload page"}),onClick:()=>window.location.reload()})]})})},p=e=>e.error?(x.has(e.error)||(x.add(e.error),r.withScope(t=>{t.setTag("settings-tab-chunk-error",!0),r.captureException(e.error)})),(0,t.jsx)(h,{})):(0,t.jsx)(g.default,{}),f=(0,i.default)(()=>e.A(68514).then(e=>({default:e.UserConnectors})),{loadableGenerated:{modules:[74337]},loading:p}),j=(0,i.default)(()=>e.A(620504).then(e=>({default:e.OrgConnectors})),{loadableGenerated:{modules:[810401]},loading:p}),b=(0,i.default)(()=>e.A(93755),{loadableGenerated:{modules:[600640]},loading:p}),y=(0,i.default)(()=>e.A(932195),{loadableGenerated:{modules:[463818]},loading:p}),w=(0,i.default)(()=>e.A(511347),{loadableGenerated:{modules:[334026]},loading:p}),v=(0,i.default)(()=>e.A(548975),{loadableGenerated:{modules:[743542]},loading:p}),C=(0,i.default)(()=>e.A(167595),{loadableGenerated:{modules:[400755]},loading:p}),T=(0,i.default)(()=>e.A(652022),{loadableGenerated:{modules:[764632]},loading:p}),_=(0,i.default)(()=>e.A(610467),{loadableGenerated:{modules:[864764]},loading:p}),S=(0,i.default)(()=>e.A(559243),{loadableGenerated:{modules:[383479]},loading:p}),D=(0,i.default)(()=>e.A(590287),{loadableGenerated:{modules:[543474]},loading:p}),B=(0,i.default)(()=>e.A(766648),{loadableGenerated:{modules:[841007]},loading:p}),U=(0,i.default)(()=>e.A(24884),{loadableGenerated:{modules:[146952]},loading:p}),P=(0,i.default)(()=>e.A(95019),{loadableGenerated:{modules:[555792]},loading:p}),k=({icon:e,label:i,hideHeader:r,children:s})=>(0,t.jsxs)(u.View,{grow:!0,clsx:m.default.tabContent,children:[!r&&(0,t.jsxs)(u.View,{row:!0,gap:8,align:"center",children:[(0,t.jsx)(e,{size:24}),(0,t.jsx)(c.Header,{level:3,variant:"headerDefault",children:i})]}),(0,t.jsx)(u.View,{py:16,children:s})]}),O=e=>(0,t.jsx)(k,{...e.tabConfig,hideHeader:e.hideHeader,children:(0,t.jsx)(R,{...e})}),R=e=>{let i=(0,o.useIntl)();if(e.disabled)return(0,t.jsx)(u.View,{clsx:m.default.permissionDeniedRoot,p:32,children:(0,t.jsxs)(u.View,{clsx:m.default.permissionDeniedContent,children:[(0,t.jsx)(s.default,{size:48}),(0,t.jsx)(c.Header,{level:2,variant:"headerDefault",children:i.formatMessage({id:"settings.permissionRequired",defaultMessage:"Permission required"})}),(0,t.jsx)(c.Text,{clsx:m.default.permissionDeniedDescription,color:"dimmer",children:e.disabledMessage||i.formatMessage({id:"settings.permissionDenied",defaultMessage:"You do not have permission to view this page."})})]})});switch(e.tab){case"workspaceOverview":return(0,t.jsx)(T,{orgId:e.orgId,orgSlug:e.orgSlug});case"invitedUsers":return e.orgSlug?(0,t.jsx)(C,{orgSlug:e.orgSlug}):(0,t.jsx)(S,{});case"workspaceUsage":return(0,t.jsx)(_,{orgId:e.orgId,setSelectedTab:e.setSelectedTab});case"integrations":return e.orgSlug?(0,t.jsx)(j,{orgSlug:e.orgSlug,handleClose:e.handleClose}):(0,t.jsx)(f,{handleClose:e.handleClose});case"knowledge":return(0,t.jsx)(U,{orgContext:e.orgContext});case"security":return(0,t.jsx)(P,{orgId:e.orgId});case"billing":return(0,t.jsx)(y,{customerContext:e.customerContext});case"seats":return(0,t.jsx)(v,{customerContext:e.customerContext,setSelectedTab:e.setSelectedTab});case"customerUsage":return(0,t.jsx)(w,{customerContext:e.customerContext,setSelectedTab:e.setSelectedTab});case"advanced":return(0,t.jsx)(b,{customerContext:e.customerContext});case"profile":return(0,t.jsx)(B,{});case"personalization":return(0,t.jsx)(l.PreferencesProvider,{children:(0,t.jsx)(D,{})});default:return(0,a.default)(e)}};var A=e.i(919073),V=e.i(248146);e.s(["UniversalSettingsContentArea",0,function({loading:e,tabContentProps:i}){return e?(0,t.jsx)(u.View,{grow:!0,align:"center",justify:"center",children:(0,t.jsx)(g.default,{})}):(0,t.jsx)(A.ShadesSurface,{clsx:V.default.content,elevate:"1x",children:i?(0,t.jsx)(O,{...i}):null})}],626425);var M=e.i(389959),I=e.i(351623);let F=I.gql`
+    fragment UniversalSettingsTabsCustomerAuthorizations on Customer {
+  id
+  isCveAutoRemediationFlagEnabled: isFlagEnabled(
+    flag: "flag-cve-auto-remediation"
+  )
+  isCustomSkillsFlagEnabled: isFlagEnabled(flag: "flag-custom-skills")
+  authorizations {
+    viewSubscription {
+      isAuthorized
+      message
+    }
+    viewSeats {
+      isAuthorized
+      message
+    }
+    viewUsage {
+      isAuthorized
+      message
+    }
+    editUsageLimit {
+      isAuthorized
+      message
+    }
+    editSettings {
+      isAuthorized
+      message
+    }
+    enableScim {
+      isAuthorized
+      message
+    }
+    enableSaml {
+      isAuthorized
+      message
+    }
+    enableAuditLogs {
+      isAuthorized
+      message
+    }
+  }
+}
+    `,G=I.gql`
+    fragment UniversalSettingsTabsOrgAuthorizations on OrgAuthorizations {
+  viewUsage {
+    isAuthorized
+    message
+  }
+  viewOrgMetadata {
+    isAuthorized
+    message
+  }
+  viewOrgCustomInstructions {
+    isAuthorized
+    message
+  }
+  viewOrgCustomSkills {
+    isAuthorized
+    message
+  }
+  viewOrgSecurity {
+    isAuthorized
+    message
+  }
+}
+    `;var z=e.i(180273),E=e.i(750180),W=e.i(655301),L=e.i(450067),$=e.i(344480);e.i(975473);let q={},N=I.gql`
+    fragment LegacySettingsPageOrgSettings on Org {
+  ...BillingPanelOrg
+  ...DangerPanelOrg
+  ...SponsorshipsPanelOrg
+}
+    ${E.BillingPanelOrgFragmentDoc}
+${W.DangerPanelOrgFragmentDoc}
+${L.SponsorshipsPanelOrgFragmentDoc}`,H=I.gql`
+    fragment UniversalSettingsOrgSections on Org {
+  authorizations {
+    createSponsoredSeatInvitation {
+      isAuthorized
+    }
+  }
+  dealContext {
+    dealType
+  }
+}
+    `,Q=I.gql`
+    query UniversalSettingsModalCurrentUser {
+  currentUser {
+    __typename
+    ... on CurrentUser {
+      id
+      username
+      image
+      personalOrgAuthorizations {
+        ...UniversalSettingsTabsOrgAuthorizations
+      }
+      customer {
+        id
+        ...UniversalSettingsTabsCustomerAuthorizations
+      }
+      ...IsUnifiedPlanEnabledPersonalWorkspaceCurrentUser
+    }
+  }
+}
+    ${G}
+${F}
+${z.IsUnifiedPlanEnabledPersonalWorkspaceCurrentUserFragmentDoc}`,Y=I.gql`
+    query UniversalSettingsModalOrg($orgSlug: String!) {
+  getOrg(orgSlug: $orgSlug) {
+    __typename
+    ... on Org {
+      id
+      image
+      name
+      authorizations {
+        ...UniversalSettingsTabsOrgAuthorizations
+      }
+      customer {
+        ... on Customer {
+          id
+          ...UniversalSettingsTabsCustomerAuthorizations
+        }
+      }
+      ...IsUnifiedPlanEnabledOrg
+      ...LegacySettingsPageOrgSettings
+      ...UniversalSettingsOrgSections
+    }
+    ... on NotFoundError {
+      message
+    }
+  }
+}
+    ${G}
+${F}
+${z.IsUnifiedPlanEnabledOrgFragmentDoc}
+${N}
+${H}`;var K=e.i(151027),X=e.i(410458),J=e.i(683856);e.s(["useUniversalSettingsData",0,function(e){var t;let i,r,{orgSlug:s}=(0,K.useCurrentUserStoredOrgContext)(),n=e??s,{data:a,loading:l}=(i={...q,...void 0},$.useQuery(Q,i)),{data:o,loading:d,previousData:c}=(t={variables:{orgSlug:n??""},skip:!n},r={...q,...t},$.useQuery(Y,r)),u=n?o??c:void 0,g=u?.getOrg?.__typename==="Org"?u.getOrg:null,m=a?.currentUser?.__typename==="CurrentUser"?a.currentUser:null,{disableIntegrations:x,loading:h}=(0,X.default)(g?.id),p=x??!1,f=(0,M.useMemo)(()=>{if(g)return{type:"shared",orgId:g.id,orgAuthorizations:g.authorizations};let e=m?.personalOrgAuthorizations;if(e&&"OrgAuthorizations"===e.__typename)return{type:"personal",orgAuthorizations:e}},[g,m]),j=(0,M.useMemo)(()=>{if(g){if("Customer"!==g.customer.__typename)return;return{type:"shared",customerId:g.customer.id,isCveAutoRemediationFlagEnabled:g.customer.isCveAutoRemediationFlagEnabled,isCustomSkillsFlagEnabled:g.customer.isCustomSkillsFlagEnabled,orgId:g.id,orgName:g.name,orgDealContext:g.dealContext??void 0,customerAuthorizations:g.customer.authorizations}}if(m){if("Customer"!==m.customer.__typename)return;return{type:"personal",customerId:m.customer.id,isCveAutoRemediationFlagEnabled:m.customer.isCveAutoRemediationFlagEnabled,isCustomSkillsFlagEnabled:m.customer.isCustomSkillsFlagEnabled,customerAuthorizations:m.customer.authorizations}}},[g,m]),b=(0,M.useMemo)(()=>f?(0,J.getAvailableOrgTabs)(f,{disableIntegrations:p,isCustomSkillsFlagEnabled:j?.isCustomSkillsFlagEnabled}):[],[f,p,j]),y=(0,M.useMemo)(()=>j?(0,J.getAvailableCustomerTabs)(j):[],[j]),w=(0,M.useMemo)(()=>(0,J.getAvailableUserTabs)(),[]),v=(0,M.useMemo)(()=>new Map([...b,...y,...w].map(e=>[e.tabConfig.id,e])),[b,y,w]),C=(0,M.useCallback)((e,t,i)=>{let r=v.get(e);if(!r)return null;let s=e=>({...e,tabConfig:r.tabConfig,setSelectedTab:t,disabled:!r.isAuthorized,disabledMessage:r.isAuthorized?void 0:r.message,handleClose:i});switch(e){case"workspaceOverview":return s({tab:"workspaceOverview",orgId:g?.id,orgSlug:n});case"invitedUsers":return s({tab:"invitedUsers",orgSlug:n});case"workspaceUsage":return s({tab:"workspaceUsage",orgId:g?.id??null});case"integrations":return s({tab:"integrations",orgSlug:n});case"knowledge":if(!f)return null;return s({tab:"knowledge",orgContext:f});case"security":return s({tab:"security",orgId:g?.id});case"billing":if(!j)return null;return s({tab:"billing",customerContext:j});case"seats":if(!j)return null;return s({tab:"seats",customerContext:j});case"customerUsage":if(!j)return null;return s({tab:"customerUsage",customerContext:j});case"advanced":return s({tab:"advanced",customerContext:j});case"profile":return s({tab:"profile"});case"personalization":return s({tab:"personalization"});default:return null}},[v,g,n,j,f]);return{loading:l||d&&null==c||h,userLoading:l,orgLoading:d,orgSlug:n,org:g,currentUser:m,orgTabs:b,customerTabs:y,userTabs:w,availableTabs:v,buildTabContentProps:C}}],565848)},750180,797084,655301,443281,16661,450067,e=>{"use strict";var t=e.i(351623),i=e.i(568644),r=e.i(344480);e.i(975473);let s={},n=t.gql`
+    fragment BillingPanelAuthorizations on OrgAuthorizations {
+  editPaymentMethod {
+    isAuthorized
+    message
+  }
+  editBillingContact {
+    isAuthorized
+    message
+  }
+  viewUsageLimit {
+    isAuthorized
+    message
+  }
+  editUsageLimit {
+    isAuthorized
+    message
+  }
+  viewUsage {
+    isAuthorized
+    message
+  }
+  viewSubscription {
+    isAuthorized
+    message
+  }
+}
+    `,a=t.gql`
+    fragment BillingPanelOrgPlanInfo on OrgPlanInfo {
+  name
+  perSeatCost
+  email
+  planId
+}
+    `,l=t.gql`
+    fragment BillingPanelUsageBasedBillingBudget on UsageBasedBillingBudget {
+  id
+  hasReachedBudget
+}
+    `,o=t.gql`
+    fragment BillingPanelOrg on Org {
+  id
+  name
+  slug
+  dealContext {
+    dealType
+    salesContactEmail
+  }
+}
+    `,d=t.gql`
+    query BillingPanelPlanInfo($orgId: String!) {
+  currentUser {
+    id
+    org(orgId: $orgId) {
+      ... on Org {
+        id
+        name
+        isUBBBanned
+        usageBasedBillingBudget {
+          ... on UsageBasedBillingBudget {
+            ...BillingPanelUsageBasedBillingBudget
+          }
+          ... on Error {
+            message
+          }
+        }
+        customer {
+          ... on Customer {
+            ...EditUsageBasedBillingAlertsFormCustomerAlerts
+          }
+          ... on Error {
+            message
+          }
+        }
+        planInfo {
+          ... on OrgPlanInfo {
+            ...BillingPanelOrgPlanInfo
+          }
+          ... on Error {
+            message
+          }
+        }
+        paymentMethod {
+          ... on PaymentMethod {
+            __typename
+            id
+          }
+          ... on Error {
+            message
+          }
+        }
+        usageInterval {
+          ... on UsageInterval {
+            totalAmountUsd
+            endDate
+          }
+          ... on Error {
+            message
+          }
+        }
+        authorizations {
+          ...BillingPanelAuthorizations
+        }
+      }
+      ... on Error {
+        message
+      }
+    }
+  }
+}
+    ${l}
+${i.EditUsageBasedBillingAlertsFormCustomerAlertsFragmentDoc}
+${a}
+${n}`;e.s(["BillingPanelOrgFragmentDoc",0,o,"BillingPanelOrgPlanInfoFragmentDoc",0,a,"useBillingPanelPlanInfoQuery",0,function(e){let t={...s,...e};return r.useQuery(d,t)}],750180);var c=e.i(299020);let u={},g=t.gql`
+    fragment CancelOrgSubscriptionAuthorizations on OrgAuthorizations {
+  cancelOrgSubscription {
+    isAuthorized
+    message
+  }
+  unscheduleOrgSubscriptionCancellation {
+    isAuthorized
+    message
+  }
+}
+    `,m=t.gql`
+    mutation CancelOrgSubscription($input: CancelOrgSubscriptionInput!) {
+  cancelOrgSubscription(input: $input) {
+    ... on CurrentUser {
+      id
+    }
+    ... on Error {
+      message
+    }
+  }
+}
+    `,x=t.gql`
+    mutation UnscheduleOrgSubscriptionCancellation($input: UnscheduleOrgSubscriptionCancellationInput!) {
+  unscheduleOrgSubscriptionCancellation(input: $input) {
+    ... on CurrentUser {
+      id
+    }
+    ... on Error {
+      message
+    }
+  }
+}
+    `;e.s(["CancelOrgSubscriptionAuthorizationsFragmentDoc",0,g,"useCancelOrgSubscriptionMutation",0,function(e){let t={...u,...e};return c.useMutation(m,t)},"useUnscheduleOrgSubscriptionCancellationMutation",0,function(e){let t={...u,...e};return c.useMutation(x,t)}],797084);let h={},p=t.gql`
+    fragment DeleteOrgAuthorizations on OrgAuthorizations {
+  deleteOrg {
+    isAuthorized
+    message
+  }
+}
+    `,f=t.gql`
+    fragment EditSettingsAuthorizations on OrgAuthorizations {
+  editSettings {
+    isAuthorized
+    message
+  }
+}
+    `,j=t.gql`
+    fragment RestoreOrgSubscriptionAuthorizations on OrgAuthorizations {
+  restoreOrgSubscription {
+    isAuthorized
+    message
+  }
+}
+    `,b=t.gql`
+    fragment OrgSettings on OrgSettings {
+  requirePrivateDeployments
+  adminOnlyPublicDeployments
+  requirePrivateDevUrls
+  disablePasswordProtectedDeployments
+  adminOnlyPasswordProtectedDeploymentsBypass
+  banSourceCodeExport
+  banAttachmentUploads
+  requireGitRemoteBeforeDeployment
+  adminOnlyGitRemoteBeforeDeploymentBypass
+  requirePrivateRemote
+  adminOnlyPrivateRemoteBypass
+  allowedGitProvider
+  allowedGitRemoteTarget
+  showPublicRepls
+  isProfilePublic
+  requireSecurityScanOnDeployment
+  adminOnlySecurityScanOnDeploymentBypass
+  disableImport
+  disableIntegrations
+  disableFrameworks
+}
+    `,y=t.gql`
+    fragment DangerPanelOrg on Org {
+  id
+  name
+  dealContext {
+    dealType
+    salesContactEmail
+  }
+  authorizations {
+    ...DeleteOrgAuthorizations
+    ...EditSettingsAuthorizations
+    ...CancelOrgSubscriptionAuthorizations
+    ...RestoreOrgSubscriptionAuthorizations
+  }
+  settings {
+    ...OrgSettings
+  }
+}
+    ${p}
+${f}
+${g}
+${j}
+${b}`,w=t.gql`
+    mutation DeleteOrgDangerPanel($input: DeleteOrgInput!, $count: Int!) {
+  deleteOrg(input: $input) {
+    ... on CurrentUser {
+      id
+      orgs(count: $count) {
+        ... on CurrentUserOrganizationConnection {
+          items {
+            org {
+              id
+            }
+          }
+        }
+      }
+    }
+    ... on Error {
+      message
+    }
+  }
+}
+    `,v=t.gql`
+    mutation OrgAppSettingsUpdate($input: UpdateOrgSettingsInput!) {
+  updateOrgSettings(input: $input) {
+    __typename
+    ... on Org {
+      id
+      settings {
+        ... on OrgSettings {
+          orgId
+          requirePrivateDeployments
+          banSourceCodeExport
+          adminOnlyPublicDeployments
+          requirePrivateDevUrls
+          disablePasswordProtectedDeployments
+          adminOnlyPasswordProtectedDeploymentsBypass
+          higherPowerModelDisabled
+          modelfarmDisabled
+          requireGitRemoteBeforeDeployment
+          adminOnlyGitRemoteBeforeDeploymentBypass
+          requirePrivateRemote
+          adminOnlyPrivateRemoteBypass
+          requireSecurityScanOnDeployment
+          adminOnlySecurityScanOnDeploymentBypass
+          disableImport
+          disableIntegrations
+          disableFrameworks
+          allowedGitProvider
+          allowedGitRemoteTarget
+          banAttachmentUploads
+        }
+        ... on Error {
+          message
+        }
+      }
+    }
+    ... on Error {
+      message
+    }
+  }
+}
+    `;e.s(["DangerPanelOrgFragmentDoc",0,y,"useDeleteOrgDangerPanelMutation",0,function(e){let t={...h,...e};return c.useMutation(w,t)},"useOrgAppSettingsUpdateMutation",0,function(e){let t={...h,...e};return c.useMutation(v,t)}],655301);var C=e.i(444008);let T={},_=t.gql`
+    fragment InviteSponsoredUserDialogOrg on Org {
+  id
+  name
+  sponsoredSubscriptionInfo {
+    ... on OrgSponsoredSubscriptionInfo {
+      id
+      usage {
+        ... on OrgSponsoredSubscriptionInfoUsage {
+          totalMonths
+          monthsRemaining
+          monthsUsed
+        }
+        ... on Error {
+          message
+        }
+      }
+    }
+    ... on Error {
+      message
+    }
+  }
+}
+    `,S=t.gql`
+    mutation CreateSponsoredSubscriptionInvites($input: CreateSponsoredSubscriptionInvitesInput!) {
+  createSponsoredSubscriptionInvites(input: $input) {
+    __typename
+    ... on Org {
+      id
+      ...InviteSponsoredUserDialogOrg
+    }
+    ... on Error {
+      message
+    }
+  }
+}
+    ${_}`,D=t.gql`
+    query SponsoredSubscriptionDeals($orgId: String!) {
+  currentUser {
+    id
+    org(orgId: $orgId) {
+      ... on Org {
+        id
+        sponsoredSubscriptionInfo {
+          ... on OrgSponsoredSubscriptionInfo {
+            id
+            deals(input: {count: 20}) {
+              ... on OrgSponsoredSubscriptionDealConnection {
+                items {
+                  id
+                  subscriptionMonthsRemaining
+                }
+              }
+              ... on Error {
+                message
+              }
+            }
+          }
+          ... on Error {
+            message
+          }
+        }
+      }
+    }
+  }
+}
+    `;e.s(["InviteSponsoredUserDialogOrgFragmentDoc",0,_,"useCreateSponsoredSubscriptionInvitesMutation",0,function(e){let t={...T,...e};return c.useMutation(S,t)},"useSponsoredSubscriptionDealsQuery",0,function(e){let t={...T,...e};return r.useQuery(D,t)}],443281);let B={},U=t.gql`
+    fragment OrgSponsorshipsOrg on Org {
+  ...OrgMetadata
+  currentUserRole
+  ...InviteSponsoredUserDialogOrg
+  authorizations {
+    viewSponsoredSeatInvitations {
+      isAuthorized
+      message
+    }
+    createSponsoredSeatInvitation {
+      isAuthorized
+      message
+    }
+  }
+}
+    ${C.OrgMetadataFragmentDoc}
+${_}`,P=t.gql`
+    query OrgSponsorships($orgId: String!, $input: OrgSponsoredSubscriptionInfoInvitesInput!) {
+  currentUser {
+    id
+    org(orgId: $orgId) {
+      ... on Org {
+        id
+        sponsoredSubscriptionInfo {
+          ... on OrgSponsoredSubscriptionInfo {
+            id
+            invites(input: $input) {
+              ... on OrgInviteSponsorshipConnection {
+                pageInfo {
+                  hasNextPage
+                  nextCursor
+                }
+                items {
+                  id
+                  invite {
+                    id
+                    email
+                    timeCreated
+                    status
+                    type
+                  }
+                  months
+                  timeCreated
+                }
+              }
+              ... on Error {
+                message
+              }
+            }
+          }
+          ... on Error {
+            message
+          }
+        }
+      }
+      ... on NotFoundError {
+        message
+      }
+    }
+  }
+}
+    `;e.s(["OrgSponsorshipsDocument",0,P,"OrgSponsorshipsOrgFragmentDoc",0,U,"useOrgSponsorshipsQuery",0,function(e){let t={...B,...e};return r.useQuery(P,t)}],16661);let k=t.gql`
+    fragment SponsorshipsPanelOrg on Org {
+  id
+  ...OrgSponsorshipsOrg
+}
+    ${U}`;e.s(["SponsorshipsPanelOrgFragmentDoc",0,k],450067)},402339,e=>{e.v({almostExceededBudgetButton:"BudgetWarning-module__tn3RCG__almostExceededBudgetButton",hasExceededBudgetButton:"BudgetWarning-module__tn3RCG__hasExceededBudgetButton"})},862317,e=>{"use strict";var t=e.i(276385),i=e.i(917255),r=e.i(761201),s=e.i(419635),n=e.i(108431),a=e.i(8047),l=e.i(61732),o=e.i(402339);e.s(["BudgetWarning",0,function({totalAmountUsd:e,usageBasedBillingAlerts:d,hasExceededBudget:c}){let u=d?.hardAlert;return c?(0,t.jsx)(n.StatusBanner,{colorway:"warning",text:(0,t.jsxs)(l.View,{gap:8,children:[(0,t.jsxs)(l.View,{children:[(0,t.jsx)(a.Text,{variant:"subheadDefault",children:"Your usage has reached your monthly cost limit."}),(0,t.jsx)(a.Text,{children:"Increase your limit to resume normal functionality."})]}),(0,t.jsx)(l.View,{row:!0,children:(0,t.jsx)(s.ButtonLink,{clsx:o.default.hasExceededBudgetButton,text:"Learn more",target:"_blank",variant:"nofill",href:r.LINKS_DOCS.MANAGING_SPEND,iconLeft:(0,t.jsx)(i.default,{})})})]})}):void 0!==e&&u?.threshold&&e>=.75*u.threshold?(0,t.jsx)(n.StatusBanner,{colorway:"yellow",text:(0,t.jsxs)(l.View,{gap:8,children:[(0,t.jsxs)(l.View,{children:[(0,t.jsx)(a.Text,{variant:"subheadDefault",children:"Your usage is nearing your monthly cost limit."}),(0,t.jsx)(a.Text,{children:"To prevent service suspension, consider increasing your limit or reducing usage."})]}),(0,t.jsx)(l.View,{row:!0,children:(0,t.jsx)(s.ButtonLink,{clsx:o.default.almostExceededBudgetButton,text:"Learn more",target:"_blank",variant:"nofill",href:r.LINKS_DOCS.USAGE_BASED_BILLING_BUDGETS,iconLeft:(0,t.jsx)(i.default,{})})})]})}):null}])},736266,e=>{"use strict";var t=e.i(932200),i=e.i(716768),r=e.i(624071),s=e.i(395440),n=e.i(473105),a=e.i(729967),l=e.i(138715),o=e.i(99906),d=e.i(389959);let c=(0,d.createContext)(null),u=(0,d.forwardRef)(function(e,u){[e,u]=(0,t.useContextProps)(e,u,c);let g=e.href&&!e.isDisabled?"a":"span",{linkProps:m,isPressed:x}=function(e,t){let{elementType:l="a",onPress:o,onPressStart:d,onPressEnd:c,onClick:u,isDisabled:g,...m}=e,x={};"a"!==l&&(x={role:"link",tabIndex:g?void 0:0});let{focusableProps:h}=(0,n.useFocusable)(e,t),{pressProps:p,isPressed:f}=(0,a.usePress)({onPress:o,onPressStart:d,onPressEnd:c,isDisabled:g,ref:t}),j=(0,i.filterDOMProps)(m,{labelable:!0}),b=(0,r.mergeProps)(h,p),y=(0,s.useRouter)(),w=(0,s.useLinkProps)(e);return{isPressed:f,linkProps:(0,r.mergeProps)(j,w,{...b,...x,"aria-disabled":g||void 0,"aria-current":e["aria-current"],onClick:t=>{var i;null==(i=p.onClick)||i.call(p,t),u&&(u(t),console.warn("onClick is deprecated, please use onPress")),!y.isNative&&t.currentTarget instanceof HTMLAnchorElement&&t.currentTarget.href&&!t.isDefaultPrevented()&&(0,s.shouldClientNavigate)(t.currentTarget,t)&&e.href&&(t.preventDefault(),y.open(t.currentTarget,t,e.href,e.routerOptions))}})}}({...e,elementType:g},u),{hoverProps:h,isHovered:p}=(0,l.useHover)(e),{focusProps:f,isFocused:j,isFocusVisible:b}=(0,o.useFocusRing)(),y=(0,t.useRenderProps)({...e,defaultClassName:"react-aria-Link",values:{isCurrent:!!e["aria-current"],isDisabled:e.isDisabled||!1,isPressed:x,isHovered:p,isFocused:j,isFocusVisible:b}});return d.default.createElement(g,{ref:u,slot:e.slot||void 0,...(0,r.mergeProps)(y,m,h,f),"data-focused":j||void 0,"data-hovered":p||void 0,"data-pressed":x||void 0,"data-focus-visible":b||void 0,"data-current":!!e["aria-current"]||void 0,"data-disabled":e.isDisabled||void 0},y.children)});e.s(["Link",0,u],736266)},440794,e=>{e.v({card:"BillingOverview-module__0OhXta__card",cardContent:"BillingOverview-module__0OhXta__cardContent",cardsContainer:"BillingOverview-module__0OhXta__cardsContainer",fieldRow:"BillingOverview-module__0OhXta__fieldRow",loadingSkeleton:"BillingOverview-module__0OhXta__loadingSkeleton",sectionContainer:"BillingOverview-module__0OhXta__sectionContainer"})},498261,e=>{e.v({accordionHeaderContent:"CreditPackTable-module__y59E_q__accordionHeaderContent",loadingRow:"CreditPackTable-module__y59E_q__loadingRow",measureBar:"CreditPackTable-module__y59E_q__measureBar",measureBarContainer:"CreditPackTable-module__y59E_q__measureBarContainer",tableContainer:"CreditPackTable-module__y59E_q__tableContainer",usageText:"CreditPackTable-module__y59E_q__usageText"})},582823,e=>{e.v({accordionContainer:"index-module__Y-7bTG__accordionContainer",linkButton:"index-module__Y-7bTG__linkButton",linkStyle:"index-module__Y-7bTG__linkStyle",loadingState:"index-module__Y-7bTG__loadingState",sectionContainer:"index-module__Y-7bTG__sectionContainer",sectionHeader:"index-module__Y-7bTG__sectionHeader",sectionTitle:"index-module__Y-7bTG__sectionTitle"})},933484,746555,560121,e=>{"use strict";var t=e.i(276385),i=e.i(121758),r=e.i(363674),s=e.i(955410),n=e.i(261348);function a(e){return e.toLocaleString("en-US",{style:"currency",currency:"USD",minimumFractionDigits:0})}e.s(["toSingleDigitDollar",0,a],746555);var l=e.i(9620),o=e.i(835685),d=e.i(201894),c=e.i(424620),u=e.i(478507),g=e.i(984119),m=e.i(279390),x=e.i(663100),h=e.i(508454),p=e.i(8047),f=e.i(61732),j=e.i(498261);let b=l.loadingStyle.foregroundPulse(),y=[{key:"name",label:"Name"},{key:"issueDate",label:"Issue date"},{key:"expiryDate",label:"Expiry date"},{key:"usage",label:"Usage"}];function w({title:e,label:i,blocks:r,loading:s}){if(s)return(0,t.jsx)(f.View,{className:j.default.tableContainer,children:(0,t.jsx)(f.View,{className:j.default.loadingRow,css:b})});if(0===r.length)return null;let l=r.map(e=>({id:e.blockId,name:`${a(e.initialBalance)} ${i}`,issueDate:(0,n.format)(new Date(e.effectiveDate),"MMM dd, yyyy"),expiryDate:(0,n.format)(new Date(e.expiryDate),"MMM dd, yyyy"),used:e.initialBalance-e.currentBalance,total:e.initialBalance,percentage:e.initialBalance>0?(e.initialBalance-e.currentBalance)/e.initialBalance:0}));return(0,t.jsx)(o.AccordionItem,{headerContent:(0,t.jsx)(f.View,{className:j.default.accordionHeaderContent,children:(0,t.jsx)(p.Text,{children:e})}),defaultExpanded:!0,chevron:"start",children:(0,t.jsx)(f.View,{className:j.default.tableContainer,children:(0,t.jsxs)(c.default,{"aria-label":e,selectionMode:"none",children:[(0,t.jsx)(x.TableHeader,{columns:y,children:e=>(0,t.jsx)(m.TableColumn,{children:(0,t.jsx)(p.Text,{color:"dimmest",children:e.label})},e.key)}),(0,t.jsx)(u.default,{items:l,children:e=>(0,t.jsxs)(h.TableRow,{children:[(0,t.jsx)(g.TableCell,{children:(0,t.jsx)(p.Text,{children:e.name})}),(0,t.jsx)(g.TableCell,{children:(0,t.jsx)(p.Text,{children:e.issueDate})}),(0,t.jsx)(g.TableCell,{children:(0,t.jsx)(p.Text,{children:e.expiryDate})}),(0,t.jsx)(g.TableCell,{children:(0,t.jsxs)(f.View,{row:!0,align:"center",gap:12,children:[(0,t.jsx)(f.View,{className:j.default.usageText,children:(0,t.jsxs)(p.Text,{children:[a(e.used)," /"," ",a(e.total)]})}),(0,t.jsx)(f.View,{className:j.default.measureBarContainer,children:(0,t.jsx)(d.MeasureBar,{className:j.default.measureBar,current:e.percentage,total:1,tooltipHidden:!0})})]})})]},e.id)})]})})})}var v=e.i(926684),C=e.i(582823);let T={surface:"credits"},_=l.loadingStyle.foregroundPulse();function S(){let{trackClick:e}=(0,s.useTrackClick)();return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(p.Header,{variant:"subheadBig",level:2,children:"Credits"}),(0,t.jsxs)(p.Text,{color:"dimmer",children:["Updates take up to 1 hour and may not reflect the latest usage data."," ",(0,t.jsx)("button",{type:"button",onClick:()=>{e({productArea:"billing",target:"purchase_credit_packs_button"}),i.default.show(r.default)},clsx:[C.default.linkButton,C.default.linkStyle],children:"Purchase credit pack"}),"."]})]})}e.s(["CreditsSection",0,function({detailedCredits:e,loading:i,error:r}){if(i)return(0,t.jsx)(v.TrackingHierarchyProvider,{hierarchy:T,children:(0,t.jsxs)(f.View,{gap:16,children:[(0,t.jsx)(S,{}),(0,t.jsx)(f.View,{clsx:C.default.loadingState,css:_})]})});if(r||!e)return(0,t.jsx)(v.TrackingHierarchyProvider,{hierarchy:T,children:(0,t.jsxs)(f.View,{gap:16,children:[(0,t.jsx)(S,{}),(0,t.jsx)(p.Text,{color:"dimmer",children:"Unable to fetch credits information"})]})});let s=e.creditBlocksByType.creditPackPurchase.length>0,n=e.creditBlocksByType.referral.length>0,a=e.creditBlocksByType.gift.length>0;return(0,t.jsx)(v.TrackingHierarchyProvider,{hierarchy:T,children:(0,t.jsxs)(f.View,{gap:16,children:[(0,t.jsx)(S,{}),s?(0,t.jsx)(f.View,{className:C.default.sectionContainer,children:(0,t.jsxs)(f.View,{className:C.default.sectionHeader,children:[(0,t.jsx)(f.View,{className:C.default.sectionTitle,children:(0,t.jsx)(p.Text,{variant:"subheadDefault",children:"Credit Packs"})}),(0,t.jsx)(f.View,{className:C.default.accordionContainer,children:(0,t.jsx)(w,{title:"One-time credit packs",label:"credit pack",blocks:e.creditBlocksByType.creditPackPurchase,loading:!1})})]})}):null,n||a?(0,t.jsx)(f.View,{className:C.default.sectionContainer,children:(0,t.jsxs)(f.View,{className:C.default.sectionHeader,children:[(0,t.jsx)(f.View,{className:C.default.sectionTitle,children:(0,t.jsx)(p.Text,{variant:"subheadDefault",children:"Promotional Credits"})}),(0,t.jsxs)(f.View,{className:C.default.accordionContainer,children:[n?(0,t.jsx)(w,{title:"Referral credits",label:"referral credits",blocks:e.creditBlocksByType.referral,loading:!1}):null,a?(0,t.jsx)(w,{title:"Gifted credits",label:"gifted credits",blocks:e.creditBlocksByType.gift,loading:!1}):null]})]})}):null]})})}],933484),e.s(["default",0,function({hasOrbCustomer:e,orgId:i}){let r=i?`/orb-customer-portal/org/${i}`:"/orb-customer-portal";return(0,t.jsx)(f.View,{row:!0,gap:4,align:"center",children:(0,t.jsxs)(p.Text,{color:"dimmer",children:["Updates take up to 1 hour and may not reflect the latest usage data."," ",e?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)("a",{href:r,target:"_blank",rel:"noopener noreferrer",children:"See previous invoices"}),"."]}):null]})})}],560121)},779114,e=>{e.v({bold:"PlanInfo-module__Gl6HWG__bold",linkText:"PlanInfo-module__Gl6HWG__linkText"})},481552,e=>{e.v({bold:"TotalUsage-module__qQnK_G__bold",budgetInfoTooltipLine:"TotalUsage-module__qQnK_G__budgetInfoTooltipLine",cardContent:"TotalUsage-module__qQnK_G__cardContent",fieldRow:"TotalUsage-module__qQnK_G__fieldRow",primaryLink:"TotalUsage-module__qQnK_G__primaryLink",totalInteractiveBold:"TotalUsage-module__qQnK_G__totalInteractiveBold"})},860700,101407,888133,e=>{"use strict";var t=e.i(276385),i=e.i(736266),r=e.i(220743),s=e.i(596139),n=e.i(573922),a=e.i(753451),l=e.i(242917),o=e.i(448942),d=e.i(276887),c=e.i(8047),u=e.i(61732),g=e.i(779114),m=e.i(440794);function x(){return(0,a.useIsInBonsaiWebview)()?null:(0,t.jsx)(i.Link,{href:"/account#billing",children:(0,t.jsxs)(u.View,{row:!0,gap:4,align:"center",children:[(0,t.jsx)(c.Text,{clsx:g.default.linkText,children:"Manage"}),(0,t.jsx)(r.default,{})]})})}function h({orgSlug:e}){let s=(0,a.useIsInBonsaiWebview)(),n=(0,o.orgLinks)({slug:e});return s?null:(0,t.jsx)(i.Link,{href:`${n.settings.href.toString()}/billing`,children:(0,t.jsxs)(u.View,{row:!0,gap:4,align:"center",children:[(0,t.jsx)(c.Text,{clsx:g.default.linkText,children:"Manage"}),(0,t.jsx)(r.default,{})]})})}function p({planName:e}){return(0,t.jsx)(c.Text,{clsx:g.default.bold,translate:"no",children:e})}function f({planDisplayName:e,planPeriod:i,planAmountCents:r,linkToBillingSettings:s}){return(0,t.jsxs)(u.View,{gap:12,children:[(0,t.jsx)(c.Text,{variant:"subheadDefault",children:"Your plan"}),(0,t.jsxs)(u.View,{clsx:m.default.cardContent,children:[(0,t.jsx)(p,{planName:e}),void 0!==r&&i?(0,t.jsxs)(u.View,{clsx:m.default.fieldRow,children:[(0,t.jsx)(c.Text,{color:"dimmer",children:"Plan cost"}),(0,t.jsxs)(c.Text,{children:[(0,n.displayCentsAsDollars)(r,2)," ",i]})]}):null,s]})]})}function j(){let{show:e}=(0,l.useGlobalModal)(),i=async()=>{await e("MembershipPurchaseModal",{analyticsContext:{upgrade:{context:"usage_page",surface:"usage_page"}}})};return(0,t.jsxs)(u.View,{gap:12,children:[(0,t.jsx)(c.Text,{variant:"subheadDefault",children:"Your plan"}),(0,t.jsxs)(u.View,{clsx:m.default.cardContent,children:[(0,t.jsx)(p,{planName:"Starter"}),(0,t.jsx)(u.View,{onClick:i,children:(0,t.jsxs)("a",{children:["Upgrade to Replit ",s.corePlanName]})})]})]})}e.s(["OrgPlanInfo",0,function({orgSlug:e,planPeriod:i,usageAuthz:r,planName:n,orgDealContext:a}){return r?.viewSubscription?.isAuthorized?(0,t.jsx)(f,{planDisplayName:(0,d.convertToSalesLedPlanNameIfApplicable)(n??`Replit ${s.replitTeamsPlanName}`,a),planPeriod:`/ user / ${i}`,planAmountCents:void 0,linkToBillingSettings:(0,t.jsx)(h,{orgSlug:e})}):(0,t.jsxs)(u.View,{gap:12,children:[(0,t.jsx)(c.Text,{variant:"subheadDefault",children:"Your plan"}),(0,t.jsx)(c.Text,{variant:"text",children:r?.viewSubscription.message??"Please try again later"})]})},"UserPlanInfo",0,function({isCore:e,planPeriod:i,planAmountCents:r}){return e?(0,t.jsx)(f,{planDisplayName:`Replit ${s.corePlanName}`,planPeriod:i,planAmountCents:r,linkToBillingSettings:(0,t.jsx)(x,{})}):(0,t.jsx)(j,{})}],860700);var b=e.i(462229),y=e.i(9620),w=e.i(691636);let v=(0,b.cssRecord)({container:[w.rcss.borderRadius(4),w.rcss.backgroundColor.backgroundDefault,w.rcss.display.grid,{gridTemplateColumns:"repeat(4, 1fr)",[w.media.max("tabletMax")]:[{gridTemplateColumns:"1fr 1fr"}]},w.rcss.overflow("hidden")]}),C=(0,b.cssRecord)({loader:[y.loadingStyle.backgroundPulse(),w.rcss.height(115),{[w.media.max("tabletMax")]:[w.rcss.height(230)]},v.container]});e.s(["loaderCss",0,C],101407);var T=e.i(389959),_=e.i(261348),S=e.i(570413),D=e.i(638141),B=e.i(903790),U=e.i(528326),P=e.i(244945),k=e.i(481552);function O(e,t){if(!e||!t)return null;let i=new Date(e),r=new Date(t),s=r.getFullYear()!==i.getFullYear()?"MMM dd, yyyy":"MMM dd";return`${(0,_.format)(i,s)} - ${(0,_.format)(r,s)}`}function R(e){return e?e.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2*!Number.isInteger(e)}):"$0"}function A({alertsConfig:e,canEdit:i,org:s,customerId:n}){let[l,o]=(0,T.useState)(!1),d=e?.softAlert?.threshold,g=e?.hardAlert?.threshold,m=(0,D.default)(),x=(0,a.useDoesBonsaiSupportFeature)("paymentFlowBridgeSetUsageLimits"),h=d?R(d):"not set",p=g?R(g):"not set";return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(c.Text,{color:"dimmer",children:["Alert: ",h," | Budget: ",p]}),i?(0,t.jsx)(u.View,{onClick:()=>{x?m.showPaymentFlow({type:"setUsageLimits"}):o(!0)},children:(0,t.jsx)(u.View,{row:!0,gap:4,align:"center",children:(0,t.jsxs)(c.Text,{clsx:k.default.primaryLink,children:["Manage ",x?null:(0,t.jsx)(r.default,{})]})})}):null,(0,t.jsx)(U.Modal,{isOpen:l,onRequestClose:()=>o(!1),children:void 0!==n?(0,t.jsx)(S.EditUsageBasedBillingAlertsForm,{org:s,customerId:n,initialSettings:e,onDone:()=>o(!1)}):null})]})}e.s(["AdditionalUsage",0,function({totalUsageCostUsd:e,canEditBudget:i,error:r,alertsConfig:s,customerId:n}){return(0,t.jsxs)(u.View,{gap:12,children:[(0,t.jsx)(c.Text,{variant:"subheadDefault",children:"Additional usage"}),r?(0,t.jsx)(c.Text,{variant:"text",children:"Unable to fetch additional usage"}):(0,t.jsxs)(u.View,{clsx:k.default.cardContent,children:[(0,t.jsxs)(u.View,{clsx:k.default.fieldRow,children:[(0,t.jsx)(c.Text,{color:"dimmer",children:"Spent"}),(0,t.jsxs)(c.Text,{children:["$",(e??0).toFixed(2)]})]}),(0,t.jsx)(A,{alertsConfig:s,canEdit:i,customerId:n})]})]})},"OrgUsageTooltipContext",0,function({totalUsageCostUsd:e,subtotalUsageCostUsd:i,availableMonthlyCreditsUsd:r}){return(0,t.jsxs)(u.View,{gap:8,children:[(0,t.jsxs)(u.View,{clsx:k.default.budgetInfoTooltipLine,children:[(0,t.jsx)(c.Text,{variant:"small",children:"Subtotal"}),(0,t.jsx)(c.Text,{variant:"small",children:i.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2,minimumFractionDigits:2})})]}),(0,t.jsxs)(u.View,{clsx:k.default.budgetInfoTooltipLine,children:[(0,t.jsx)(c.Text,{variant:"small",color:"dimmer",children:"Monthly credits used"}),(0,t.jsxs)(c.Text,{variant:"small",color:"dimmer",children:["-",(i-e).toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2,minimumFractionDigits:2})]})]}),(0,t.jsx)(B.DividerH,{}),(0,t.jsxs)(u.View,{clsx:k.default.budgetInfoTooltipLine,children:[(0,t.jsx)(c.Text,{variant:"small",children:"Total due"}),(0,t.jsx)(c.Text,{variant:"small",children:e.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2,minimumFractionDigits:2})})]}),(0,t.jsxs)(u.View,{clsx:k.default.budgetInfoTooltipLine,children:[(0,t.jsx)(c.Text,{variant:"small",children:"Monthly credits remaining"}),(0,t.jsx)(c.Text,{variant:"small",children:r.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2,minimumFractionDigits:2})})]})]})},"TotalUsage",0,function({org:e,tooltip:i,totalUsageCostUsd:r,canEditBudget:s,error:n,alertsConfig:a,customerId:l,startOfBilling:o,endOfBilling:d}){let g=O(o,d),m=R(r);return(0,t.jsxs)(u.View,{gap:12,children:[(0,t.jsxs)(u.View,{row:!0,gap:8,align:"end",children:[(0,t.jsx)(c.Text,{variant:"subheadDefault",children:"Additional usage"}),g?(0,t.jsx)(c.Text,{variant:"small",color:"dimmer",children:g}):null]}),n?(0,t.jsx)(c.Text,{variant:"text",children:"Unable to fetch usage total"}):(0,t.jsxs)(u.View,{clsx:k.default.cardContent,children:[(0,t.jsxs)(u.View,{row:!0,gap:4,align:"center",children:[(0,t.jsx)(c.Text,{children:"Used"}),i?(0,t.jsx)(P.Tooltip,{tooltip:i,maxWidth:300,children:(0,t.jsx)(c.Text,{clsx:k.default.totalInteractiveBold,children:m})}):(0,t.jsx)(c.Text,{clsx:k.default.bold,children:m})]}),(0,t.jsx)(A,{alertsConfig:a,canEdit:s,org:e,customerId:l})]})]})},"UsageSummary",0,function({error:e,totalUsageCostUsd:i,tooltip:r,startOfBilling:s,endOfBilling:n}){let a=O(s,n),l=R(i);return(0,t.jsxs)(u.View,{gap:12,children:[(0,t.jsxs)(u.View,{row:!0,gap:4,align:"center",children:[(0,t.jsx)(c.Text,{variant:"subheadDefault",children:"Additional usage"}),a?(0,t.jsx)(c.Text,{variant:"small",color:"dimmer",children:a}):null]}),e?(0,t.jsx)(c.Text,{variant:"text",children:"Unable to fetch usage total"}):(0,t.jsx)(u.View,{clsx:k.default.cardContent,children:(0,t.jsxs)(u.View,{row:!0,gap:4,align:"center",children:[(0,t.jsx)(c.Text,{children:"Used"}),r?(0,t.jsx)(P.Tooltip,{tooltip:r,maxWidth:300,children:(0,t.jsx)(c.Text,{clsx:k.default.totalInteractiveBold,children:l})}):(0,t.jsx)(c.Text,{clsx:k.default.bold,children:l})]})})]})},"UserUsageTotalTooltipContent",0,function({creditDisplayText:e,totalUsageCostUsd:i,subtotalUsageCostUsd:r,planDiscountUsd:s}){return(0,t.jsxs)(u.View,{gap:8,children:[(0,t.jsxs)(u.View,{clsx:k.default.budgetInfoTooltipLine,children:[(0,t.jsx)(c.Text,{variant:"small",children:"Subtotal"}),(0,t.jsx)(c.Text,{variant:"small",children:r.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2,minimumFractionDigits:2})})]}),(0,t.jsxs)(u.View,{clsx:k.default.budgetInfoTooltipLine,children:[(0,t.jsx)(c.Text,{variant:"small",color:"dimmer",children:e}),(0,t.jsxs)(c.Text,{variant:"small",color:"dimmer",children:["-",s.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2,minimumFractionDigits:2})]})]}),(0,t.jsx)(B.DividerH,{}),(0,t.jsxs)(u.View,{clsx:k.default.budgetInfoTooltipLine,children:[(0,t.jsx)(c.Text,{variant:"small",children:"Total due"}),(0,t.jsx)(c.Text,{variant:"small",children:i.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2,minimumFractionDigits:2})})]})]})}],888133)},665134,e=>{e.v({dollarText:"CreditBreakdownCards-module__2_YxfW__dollarText",dottedDivider:"CreditBreakdownCards-module__2_YxfW__dottedDivider",loader:"CreditBreakdownCards-module__2_YxfW__loader","move-gradient":"CreditBreakdownCards-module__2_YxfW__move-gradient",row:"CreditBreakdownCards-module__2_YxfW__row",solidDivider:"CreditBreakdownCards-module__2_YxfW__solidDivider"})},477928,e=>{"use strict";var t=e.i(276385),i=e.i(389959),r=e.i(746555),s=e.i(643484),n=e.i(773222),a=e.i(8047),l=e.i(472499),o=e.i(61732),d=e.i(665134),c=e.i(440794);function u({subscription:e,creditPackPurchase:l,referral:c,gift:g,additional:m,total:x,label:h}){let[p,f]=(0,i.useState)(!1);return(0,t.jsxs)(n.PopoverTrigger,{label:"Credits breakdown",arrow:!0,placement:"bottom",isOpen:p,onOpenChange:f,children:[(0,t.jsx)(s.Button,{variant:"underlined",colorway:"blue",text:"View breakdown",alignment:"start"}),(0,t.jsxs)(o.View,{gap:8,p:16,children:[(0,t.jsxs)(o.View,{className:d.default.row,children:[(0,t.jsx)(a.Text,{color:"dimmer",children:"Subscription credits"}),(0,t.jsx)(a.Text,{children:(0,r.toSingleDigitDollar)(e)})]}),(0,t.jsxs)(o.View,{className:d.default.row,children:[(0,t.jsx)(a.Text,{color:"dimmer",children:"Credit packs"}),(0,t.jsx)(a.Text,{children:(0,r.toSingleDigitDollar)(l)})]}),(0,t.jsx)(o.View,{className:d.default.dottedDivider}),(0,t.jsxs)(o.View,{className:d.default.row,children:[(0,t.jsx)(a.Text,{color:"dimmer",children:"Promotional credits"}),(0,t.jsx)(a.Text,{children:(0,r.toSingleDigitDollar)(c+g)})]}),(0,t.jsxs)(o.View,{className:d.default.row,children:[(0,t.jsx)(a.Text,{color:"dimmer",children:"Additional credits"}),(0,t.jsx)(a.Text,{children:(0,r.toSingleDigitDollar)(m)})]}),(0,t.jsx)(o.View,{className:d.default.solidDivider}),(0,t.jsxs)(o.View,{className:d.default.row,children:[(0,t.jsx)(a.Text,{children:h}),(0,t.jsx)(a.Text,{children:(0,r.toSingleDigitDollar)(x)})]})]})]})}e.s(["CreditBreakdownCards",0,function({detailedCredits:e,loading:i,error:s,resetDate:n}){let g=s||!e;return i?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(o.View,{p:12,clsx:c.default.card,br:8,children:(0,t.jsxs)(o.View,{gap:12,children:[(0,t.jsx)(a.Text,{variant:"subheadDefault",children:"Total available credits"}),(0,t.jsx)(o.View,{className:d.default.loader})]})}),(0,t.jsx)(o.View,{p:12,clsx:c.default.card,br:8,children:(0,t.jsxs)(o.View,{gap:12,children:[(0,t.jsx)(a.Text,{variant:"subheadDefault",children:"Credits used this month"}),(0,t.jsx)(o.View,{className:d.default.loader})]})})]}):(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(o.View,{p:12,clsx:c.default.card,br:8,children:(0,t.jsxs)(o.View,{gap:12,children:[(0,t.jsx)(a.Text,{variant:"subheadDefault",children:"Total available credits"}),g?(0,t.jsx)(a.Text,{variant:"text",children:"Unable to fetch credits information"}):(0,t.jsxs)(o.View,{clsx:c.default.cardContent,children:[(0,t.jsxs)(o.View,{clsx:c.default.fieldRow,children:[(0,t.jsx)(a.Text,{color:"dimmer",children:"Remaining"}),(0,t.jsx)(a.Text,{clsx:d.default.dollarText,children:(0,r.toSingleDigitDollar)(e.totalRemainingCredits)})]}),(0,t.jsx)(u,{subscription:e.remainingCreditsByType.subscription,creditPackPurchase:e.remainingCreditsByType.creditPackPurchase,referral:e.remainingCreditsByType.referral,gift:e.remainingCreditsByType.gift,additional:e.remainingCreditsByType.additional,total:e.totalRemainingCredits,label:"Total remaining"}),n?(0,t.jsxs)(o.View,{clsx:c.default.fieldRow,children:[(0,t.jsx)(a.Text,{color:"dimmer",children:"Resets"}),(0,t.jsx)(l.Timestamp,{textColor:"dimmer",date:new Date(n),dateFormat:"relative"})]}):null]})]})}),(0,t.jsx)(o.View,{p:12,clsx:c.default.card,br:8,children:(0,t.jsxs)(o.View,{gap:12,children:[(0,t.jsx)(a.Text,{variant:"subheadDefault",children:"Credits used this month"}),g?(0,t.jsx)(a.Text,{variant:"text",children:"Unable to fetch credits information"}):(0,t.jsxs)(o.View,{clsx:c.default.cardContent,children:[(0,t.jsxs)(o.View,{clsx:c.default.fieldRow,children:[(0,t.jsx)(a.Text,{color:"dimmer",children:"Used"}),(0,t.jsx)(a.Text,{clsx:d.default.dollarText,children:(0,r.toSingleDigitDollar)(e.totalUsedCredits)})]}),(0,t.jsx)(u,{subscription:e.usedCreditsByType.subscription,creditPackPurchase:e.usedCreditsByType.creditPackPurchase,referral:e.usedCreditsByType.referral,gift:e.usedCreditsByType.gift,additional:e.usedCreditsByType.additional,total:e.totalUsedCredits,label:"Total used"})]})]})})]})}])},295638,e=>{e.v({headerCell:"ResourceHeader-module__QY_1-W__headerCell",headerForQuota:"ResourceHeader-module__QY_1-W__headerForQuota",headerForQuotaUsed:"ResourceHeader-module__QY_1-W__headerForQuotaUsed",headerForTitle:"ResourceHeader-module__QY_1-W__headerForTitle",headerForUnit:"ResourceHeader-module__QY_1-W__headerForUnit",headerMobilePriceAndUsage:"ResourceHeader-module__QY_1-W__headerMobilePriceAndUsage",headerText:"ResourceHeader-module__QY_1-W__headerText",headerTitle:"ResourceHeader-module__QY_1-W__headerTitle",hiddenOnDesktop:"ResourceHeader-module__QY_1-W__hiddenOnDesktop",hiddenOnMobile:"ResourceHeader-module__QY_1-W__hiddenOnMobile",sectionTitle:"ResourceHeader-module__QY_1-W__sectionTitle",titleCell:"ResourceHeader-module__QY_1-W__titleCell"})},54325,e=>{"use strict";var t=e.i(276385),i=e.i(596139),r=e.i(780902),s=e.i(8047),n=e.i(61732),a=e.i(295638);function l({icon:e,name:i}){return(0,t.jsxs)("tr",{clsx:a.default.hiddenOnDesktop,children:[(0,t.jsx)("th",{clsx:[a.default.headerCell,a.default.titleCell,a.default.headerForTitle],children:(0,t.jsxs)(n.View,{clsx:a.default.headerTitle,children:[e,(0,t.jsx)(s.Text,{maxLines:1,clsx:a.default.sectionTitle,children:i})]})}),(0,t.jsx)("th",{clsx:[a.default.headerCell,a.default.headerMobilePriceAndUsage],children:(0,t.jsx)(n.View,{clsx:a.default.headerText,children:(0,t.jsx)(s.Text,{variant:"small",color:"dimmest",children:"Price and usage"})})})]})}function o({icon:e,name:r,isCore:l,hideQuotaColumns:d}){return(0,t.jsxs)("tr",{clsx:a.default.hiddenOnMobile,children:[(0,t.jsx)("th",{clsx:[a.default.headerCell,a.default.titleCell,a.default.headerForTitle],children:(0,t.jsxs)(n.View,{clsx:a.default.headerTitle,children:[e,(0,t.jsx)(s.Text,{maxLines:1,clsx:a.default.sectionTitle,children:r})]})}),d?null:(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)("th",{clsx:[a.default.headerCell,a.default.headerForQuotaUsed],children:(0,t.jsx)(n.View,{align:"center",children:(0,t.jsx)(s.Text,{variant:"small",color:"dimmest",children:"Quota Used"})})}),(0,t.jsx)("th",{clsx:[a.default.headerCell,a.default.headerForQuota],children:(0,t.jsx)(n.View,{clsx:a.default.headerText,children:(0,t.jsx)(s.Text,{variant:"small",color:"dimmest",children:null===l?"Quota":l?`${i.corePlanName} Quota`:"Starter Quota"})})})]}),(0,t.jsx)("th",{clsx:a.default.headerCell,children:(0,t.jsx)(n.View,{clsx:a.default.headerText,children:(0,t.jsx)(s.Text,{variant:"small",color:"dimmest",children:"Usage Total"})})}),(0,t.jsx)("th",{clsx:[a.default.headerCell,a.default.headerForUnit],children:(0,t.jsx)(n.View,{clsx:a.default.headerText,children:(0,t.jsx)(s.Text,{variant:"small",color:"dimmest",children:"Unit Price"})})}),(0,t.jsx)("th",{clsx:a.default.headerCell,children:(0,t.jsx)(n.View,{clsx:a.default.headerText,children:(0,t.jsx)(s.Text,{variant:"small",color:"dimmest",children:"Cost Accrued"})})})]})}e.s(["ResourceHeader",0,function({icon:e,name:i,isCore:s,hideQuotaColumns:n=!1}){return(0,r.useIsMobile)()?(0,t.jsx)(l,{icon:e,name:i}):(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(o,{icon:e,name:i,isCore:s,hideQuotaColumns:n}),(0,t.jsx)(l,{icon:e,name:i})]})}])},551915,e=>{"use strict";var t=e.i(351623);let i=t.gql`
+    fragment UsageBreakdownCurrentUser on CurrentUser {
+  id
+  username
+  isCore: subscriptionIsType(subscriptionType: HACKER_PRO)
+}
+    `,r=t.gql`
+    fragment UsageOverviewReplBreakdown on Repl {
+  id
+  title
+  url
+  nextPagePathname
+  iconUrl
+}
+    `,s=t.gql`
+    fragment UnitPriceReplUsageConnection on UnitPriceReplUsageTypeConnection {
+  items {
+    id
+    usageRepl {
+      ... on Repl {
+        ...UsageOverviewReplBreakdown
+      }
+      ... on DeletedRepl {
+        id
+      }
+    }
+    usage
+    percentage
+  }
+  pageInfo {
+    hasNextPage
+    nextCursor
+  }
+}
+    ${r}`,n=t.gql`
+    fragment MatrixPriceReplUsageConnection on MatrixPriceReplUsageTypeConnection {
+  items {
+    id
+    usageRepl {
+      ... on Repl {
+        ...UsageOverviewReplBreakdown
+      }
+      ... on DeletedRepl {
+        id
+      }
+    }
+    usage
+    percentage
+    configName
+  }
+  pageInfo {
+    hasNextPage
+    nextCursor
+  }
+}
+    ${r}`,a=t.gql`
+    fragment StaticDeploymentReplUsageConnection on StaticDeploymentReplUsageTypeConnection {
+  items {
+    id
+    usage
+    percentage
+    usageRepl {
+      ... on Repl {
+        ...UsageOverviewReplBreakdown
+        hostingDeployment {
+          ... on HostingDeployment {
+            currentBuild {
+              timeCreated
+            }
+          }
+        }
+      }
+      ... on DeletedRepl {
+        id
+      }
+    }
+  }
+  pageInfo {
+    hasNextPage
+    nextCursor
+  }
+}
+    ${r}`;e.s(["MatrixPriceReplUsageConnectionFragmentDoc",0,n,"StaticDeploymentReplUsageConnectionFragmentDoc",0,a,"UnitPriceReplUsageConnectionFragmentDoc",0,s,"UsageBreakdownCurrentUserFragmentDoc",0,i])},559228,e=>{e.v({header:"BreakdownHeader-module__cBy6EG__header",headerRow:"BreakdownHeader-module__cBy6EG__headerRow",headerText:"BreakdownHeader-module__cBy6EG__headerText",textWrapper:"BreakdownHeader-module__cBy6EG__textWrapper"})},511940,e=>{e.v({title:"ReplTooltip-module__SHLXeG__title"})},90580,e=>{e.v({self:"BarSection-module__7smJ2W__self"})},141695,e=>{e.v({bar:"ReplBreakdownBar-module__8vFlSG__bar",barInner:"ReplBreakdownBar-module__8vFlSG__barInner",barWrapper:"ReplBreakdownBar-module__8vFlSG__barWrapper"})},352517,e=>{e.v({self:"index-module__PRyPiq__self"})},239794,155564,926965,663614,92796,417785,e=>{"use strict";var t=e.i(276385),i=e.i(167392),r=e.i(269848),s=e.i(569910),n=e.i(8047),a=e.i(61732),l=e.i(559228);function o(e){switch(e){case"Bytes":case"GiB":return"Size";case"GiB-months":return"Volume";case"ComputeUnits":return"Compute Units";case"Requests":return"Requests";case"ComputeHours":return"Compute Hours";case"Site":return"Last deployed";case"Hours":return"Hours";case"Deployments":return"Deployments";case"Tokens":return"Tokens";case"Minutes":return"Minutes";case"Dollars":return"Dollars";case"PlanSteps":return"Plan Steps";case"EditRequests":return"Edit requests";case"None":return"";default:(0,s.default)(e)}}function d({type:e,resourceUsageType:i}){switch(e){case"matrix":return(0,t.jsxs)("tr",{clsx:l.default.headerRow,children:[(0,t.jsx)("th",{}),(0,t.jsx)("th",{clsx:l.default.header,children:(0,t.jsx)(a.View,{clsx:l.default.textWrapper,children:(0,t.jsx)(n.Text,{variant:"small",color:"dimmer",clsx:l.default.headerText,children:function(e){switch(e){case"Bytes":case"GiB":case"GiB-months":return"Storage";case"ComputeUnits":case"Requests":case"ComputeHours":case"Site":case"Hours":case"Deployments":return"Compute";case"Tokens":return"Model";case"Minutes":return"Minutes";case"Dollars":return"Dollars";case"PlanSteps":return"Plan Steps";case"EditRequests":return"Edit requests";case"None":return"";default:(0,s.default)(e)}}(i)})})}),(0,t.jsx)("th",{clsx:l.default.header,children:(0,t.jsx)(a.View,{clsx:l.default.textWrapper,children:(0,t.jsx)(n.Text,{variant:"small",color:"dimmer",clsx:l.default.headerText,children:"Unit cost"})})}),(0,t.jsx)("th",{clsx:l.default.header,children:(0,t.jsx)(a.View,{clsx:l.default.textWrapper,children:(0,t.jsx)(n.Text,{variant:"small",color:"dimmer",clsx:l.default.headerText,children:o(i)})})})]});case"tier":case"static":return(0,t.jsxs)("tr",{clsx:l.default.headerRow,children:[(0,t.jsx)("th",{}),(0,t.jsx)("th",{clsx:l.default.header,children:(0,t.jsx)(a.View,{clsx:l.default.textWrapper,children:(0,t.jsx)(n.Text,{variant:"small",color:"dimmer",clsx:l.default.headerText,children:o(i)})})})]});default:(0,s.default)(e)}}function c(e){switch(e){case"matrix":return 4;case"tier":case"static":return 2;default:(0,s.default)(e)}}var u=e.i(421376),g=e.i(389959),m=e.i(624071),x=e.i(415104),h=e.i(138715),p=e.i(261348),f=e.i(534141),j=e.i(995691),b=e.i(491194),y=e.i(379334),w=e.i(453340);let v=["0.25 vCPU / 1 GiB RAM","0.5 vCPU / 2 GiB RAM","1 vCPU / 4 GiB RAM","Dedicated 1 vCPU / 4 GiB RAM","Dedicated 2 vCPU / 8 GiB RAM","Dedicated 4 vCPU / 16 GiB RAM","Dedicated 8 vCPU / 32 GiB RAM","Dedicated 16 vCPU / 64 GiB RAM"],C=["0.5 vCPUs, 0.5 GiB RAM","4 vCPUs, 8 GiB RAM","8 vCPUs, 16 GiB RAM","16 vCPUs, 32 GiB RAM","32 vCPUs, 64 GiB RAM"],T=["Dedicated 2 vCPU / 16 GiB RAM","Dedicated 4 vCPU / 32 GiB RAM","Dedicated 8 vCPU / 64 GiB RAM"],_=["1 vCPU / 2 GiB RAM","2 vCPU / 4 GiB RAM","4 vCPU / 8 GiB RAM"];function S(e){if(!e)return null;if("reservedVm"===e.type&&(t=e.label,v.includes(t)))return function(e){let t=(0,y.getConfigurationSlugForReservedVmLabel)(e),i=(0,w.getDeploymentCostDetails)(),{costPerMonth:r}=(0,w.getMachineConfigurationCostDetails)(t,i);return`$${r} / month`}(e.label);if("devCompute"===e.type&&(i=e.label,C.includes(i))){var t,i,r,n,a=e.label;switch(a){case"0.5 vCPUs, 0.5 GiB RAM":case"4 vCPUs, 8 GiB RAM":return"$0.0 / hour";case"8 vCPUs, 16 GiB RAM":return"$0.36 / hour";case"16 vCPUs, 32 GiB RAM":return"$0.72 / hour";case"32 vCPUs, 64 GiB RAM":return"$1.12 / hour";default:(0,s.default)(a)}return}return"azureReservedVm"===e.type&&(r=e.label,T.includes(r))?function(e){let t=(0,y.getConfigurationSlugForAzureVmLabel)(e),i=(0,w.getDeploymentCostDetails)(),{costPerMonth:r}=(0,w.getMachineConfigurationCostDetails)(t,i);return`$${r} / month`}(e.label):"azureAutoscale"===e.type&&(n=e.label,_.includes(n))?function(e){let t=(0,y.getConfigurationSlugForAzureContainerAppLabel)(e),i=(0,w.getDeploymentCostDetails)(),{costPerMonth:r}=(0,w.getMachineConfigurationCostDetails)(t,i);return`$${r} / month`}(e.label):null}var D=e.i(780902),B=e.i(753451),U=e.i(595996),P=e.i(192915),k=e.i(480028),O=e.i(462229),R=e.i(691636),A=e.i(244945),V=e.i(921125),M=e.i(477814),I=e.i(11357),F=e.i(511940);let G=({title:e,usage:i,resourceUsageType:r,icon:s})=>(0,t.jsxs)(a.View,{row:!0,gap:8,align:"center",children:["string"==typeof s?(0,t.jsx)(U.default,{size:16,iconUrl:s,alt:e}):s,(0,t.jsx)(n.Text,{clsx:F.default.title,multiline:!1,children:e}),(0,t.jsx)(n.Text,{color:"dimmer",multiline:!1,children:(0,I.toDisplaySize)(i,{resourceUsageType:r,gibsDisplayAsBytes:!0})})]}),z=R.dataViz.categorical;var E=e.i(90580);function W(e){return e?"Repl"===e.__typename?e.title:"DeletedRepl"===e.__typename?"Deleted Repl":void(0,s.default)(e):"Repl"}let L=({color:e,resourceUsageType:i,section:r})=>{var n;let{grouped:a,percentage:l,usage:o}=r,d=100*l,c=a?r.count:1,m=a||r.repl?.__typename!=="Repl"?M.replsItem:(0,V.replLinkProps)(r.repl),[x,h]=(0,g.useState)(!1);return(0,t.jsx)(A.Tooltip,{tooltip:a?(0,t.jsx)(G,{title:`+${c} more`,usage:o,resourceUsageType:i}):(0,t.jsx)(G,{title:W(r.repl),usage:o,resourceUsageType:i,icon:(n=r.repl)?"Repl"===n.__typename?n.iconUrl:"DeletedRepl"===n.__typename?(0,t.jsx)(b.default,{}):void(0,s.default)(n):(0,t.jsx)(j.default,{})}),placement:"top",delay:"none",isOpen:x,maxWidth:400,children:(i,r)=>(0,t.jsx)(u.default,{...m,tabIndex:-1,onMouseOver:()=>h(!0),onMouseLeave:()=>h(!1),ref:r,clsx:E.default.self,style:{minWidth:"calc(0.75%)",width:`calc(${d}% - 0.9px)`,backgroundColor:e,"&:lastOfType":{width:`${d}%`}}})})},$=(0,O.cssRecord)({self:[R.rcss.pl(16),R.rcss.pr(12),R.rcss.pb(8),{wordBreak:"break-word"}],title:[R.rcss.rowWithGap(8),R.rcss.align.center],titleText:[R.rcss.color.foregroundDefault],deletedTitleText:[R.rcss.color.foregroundDimmest],empty:[R.rcss.flex.grow(1),R.rcss.width(8),R.rcss.height(8),R.rcss.minWidth(8),R.rcss.maxHeight(8),{borderRadius:"50%"}],gridText:[R.rcss.textAlign.right],editIcon:[R.rcss.color.foregroundDimmest],emptyIcon:[R.rcss.width(k.tokens.space16)]});function q(e){return"Bytes"===e||"GiB"===e}function N(e){if("Bytes"===e||"GiB"===e)return I.minGibsToDisplay}function H({repl:e,username:i,color:r,isInMobileAppWebview:s}){let[l,o]=(0,g.useState)(!1),{isHovered:d,hoverProps:c}=(0,h.useHover)({}),{focusWithinProps:p}=(0,x.useFocusWithin)({onFocusWithinChange:e=>o(e)}),y=e?.__typename==="Repl"?(0,V.replLinkProps)(e):(0,P.userLinkProps)(i),w=W(e);return(0,t.jsx)(a.View,{css:$.title,children:(0,t.jsxs)(u.default,{...y,...(0,m.mergeProps)(c,p),css:[R.rcss.viewStyle,$.title,{minWidth:0,maxWidth:"100%"},s?{pointerEvents:"none"}:{}],children:[(0,t.jsxs)(a.View,{css:$.title,children:[(0,t.jsx)("div",{css:[$.empty,{backgroundColor:r}]}),e?.__typename==="Repl"?(0,t.jsx)(U.default,{size:16,iconUrl:e.iconUrl,alt:w}):e?(0,t.jsx)(b.default,{size:16,color:k.tokens.foregroundDimmest}):(0,t.jsx)(A.Tooltip,{tooltip:"You do not have access to this Repl.",children:(0,t.jsx)(j.default,{size:16,color:k.tokens.foregroundDimmest})})]}),(0,t.jsx)(n.Text,{css:[e?.__typename==="Repl"?$.titleText:$.deletedTitleText,{minWidth:0,flex:1,wordWrap:"break-word"}],children:w}),(d||l)&&e?(0,t.jsx)(f.default,{css:$.editIcon,size:16}):(0,t.jsx)(a.View,{css:$.emptyIcon})]})})}function Q({color:e,resourceUsageType:i,username:r,itemSummary:s,isInMobileAppWebview:l}){let{repl:o,usage:d,matrixTier:c}=s,u=c?S(c):void 0;return(0,t.jsxs)("tr",{children:[(0,t.jsxs)("td",{colSpan:2,css:$.self,children:[(0,t.jsx)(H,{repl:o,username:r,color:e,isInMobileAppWebview:l}),c?(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{css:R.rcss.textAlign.right,maxLines:2,color:"dimmer",children:c.label})}):null]}),(0,t.jsxs)("td",{colSpan:1,css:[$.self],children:[(0,t.jsx)(a.View,{css:R.rcss.height(24)}),u?(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",children:u})}):null]}),(0,t.jsx)("td",{colSpan:3,css:$.self,children:(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",multiline:!1,css:[R.rcss.align.end],children:(0,I.toDisplaySize)(d,{resourceUsageType:i,precision:2,skipUnits:!q(i),gibsDisplayAsBytes:!0,minimumValue:N(i)})})})})]})}function Y({color:e,resourceUsageType:i,username:r,itemSummary:s}){let{repl:l,usage:o,matrixTier:d}=s,c=d?S(d):void 0;return(0,t.jsxs)("tr",{children:[(0,t.jsx)("td",{css:$.self,children:(0,t.jsx)(H,{repl:l,username:r,color:e,isInMobileAppWebview:!1})}),(0,t.jsx)("td",{css:$.self,children:d?(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",children:d.label})}):null}),(0,t.jsx)("td",{css:$.self,children:c?(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",children:c})}):null}),(0,t.jsx)("td",{css:$.self,children:(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",multiline:!1,css:[R.rcss.align.end],children:(0,I.toDisplaySize)(o,{resourceUsageType:i,precision:2,skipUnits:!q(i),gibsDisplayAsBytes:!0,minimumValue:N(i)})})})})]})}let K=({type:e,color:i,resourceUsageType:r,username:l,itemSummary:o})=>{let d=(0,B.useIsInBonsaiWebview)(),c=(0,D.useIsMobile)({tablet:!1}),{repl:u,usage:g,lastDeployedAt:m}=o;switch(e){case"static":let x,h;return(0,t.jsxs)("tr",{children:[(0,t.jsx)("td",{css:$.self,children:(0,t.jsx)(H,{isInMobileAppWebview:d,repl:u,username:l,color:i})}),(0,t.jsx)("td",{css:$.self,children:m?(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",multiline:!1,css:[R.rcss.textAlign.right],children:(h=(x=new Date(m)).getFullYear()===new Date().getFullYear()?"MMM dd":"MMM dd, yyyy",(0,p.format)(x,h))})}):null})]});case"matrix":return c?(0,t.jsx)(Q,{type:e,color:i,resourceUsageType:r,username:l,itemSummary:o,isInMobileAppWebview:d}):(0,t.jsx)(Y,{type:e,color:i,resourceUsageType:r,username:l,itemSummary:o});case"tier":return(0,t.jsxs)("tr",{children:[(0,t.jsx)("td",{css:$.self,children:(0,t.jsx)(H,{repl:u,username:l,color:i,isInMobileAppWebview:d})}),(0,t.jsx)("td",{css:$.self,children:(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",multiline:!1,css:[R.rcss.align.end],children:(0,I.toDisplaySize)(g,{resourceUsageType:r,precision:2,skipUnits:!q(r),gibsDisplayAsBytes:!0,minimumValue:N(r)})})})})]});default:(0,s.default)(e)}};function X({type:e,color:i,username:r,resourceUsageType:l,usage:o,itemCount:d}){let c=(0,P.userLinkProps)(r);switch(e){case"static":return(0,t.jsx)("tr",{children:(0,t.jsx)("td",{css:$.self,children:(0,t.jsxs)(a.View,{css:$.title,children:[(0,t.jsx)(a.View,{css:$.title,children:(0,t.jsx)("div",{css:$.empty,style:{backgroundColor:i}})}),(0,t.jsx)(u.default,{...c,css:R.rcss.viewStyle,children:(0,t.jsxs)(n.Text,{multiline:!1,css:$.titleText,children:["+",d," more"]})})]})})});case"matrix":return(0,t.jsxs)("tr",{children:[(0,t.jsx)("td",{css:$.self,children:(0,t.jsxs)(a.View,{css:$.title,children:[(0,t.jsx)(a.View,{css:$.title,children:(0,t.jsx)("div",{css:$.empty,style:{backgroundColor:i}})}),(0,t.jsx)(u.default,{...c,css:R.rcss.viewStyle,children:(0,t.jsxs)(n.Text,{multiline:!1,css:$.titleText,children:["+",d," more"]})})]})}),(0,t.jsx)("td",{css:$.self}),(0,t.jsx)("td",{css:$.self}),(0,t.jsx)("td",{css:$.self,children:(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",multiline:!1,children:(0,I.toDisplaySize)(o,{resourceUsageType:l,precision:2,skipUnits:!q(l),gibsDisplayAsBytes:!0,minimumValue:N(l)})})})})]});case"tier":return(0,t.jsxs)("tr",{children:[(0,t.jsx)("td",{css:$.self,children:(0,t.jsxs)(a.View,{css:$.title,children:[(0,t.jsx)(a.View,{css:$.title,children:(0,t.jsx)("div",{css:$.empty,style:{backgroundColor:i}})}),(0,t.jsx)(u.default,{...c,css:R.rcss.viewStyle,children:(0,t.jsxs)(n.Text,{multiline:!1,css:$.titleText,children:["+",d," more"]})})]})}),(0,t.jsx)("td",{css:$.self,children:(0,t.jsx)(a.View,{css:$.gridText,children:(0,t.jsx)(n.Text,{color:"dimmer",multiline:!1,children:(0,I.toDisplaySize)(o,{resourceUsageType:l,precision:2,skipUnits:!q(l),gibsDisplayAsBytes:!0,minimumValue:N(l)})})})})]});default:(0,s.default)(e)}}var J=e.i(141695);function Z({sections:e,resourceUsageType:i}){return(0,t.jsxs)(a.View,{row:!0,justify:"space-between",children:[(0,t.jsx)(a.View,{py:8,pl:16,children:(0,t.jsx)(n.Text,{color:"dimmer",children:"App"})}),(0,t.jsx)(a.View,{clsx:J.default.barWrapper,justify:"center",pr:12,py:8,children:(0,t.jsx)(a.View,{clsx:[J.default.bar,J.default.barInner],row:!0,gap:1,br:16,children:e.map((e,r)=>(0,t.jsx)(L,{color:z[r%z.length],resourceUsageType:i,section:e},r))})})]})}var ee=e.i(9620),et=e.i(643484),ei=e.i(352517);let er=({type:e,summary:s,resourceUsageType:l,showBreakdown:o,username:u,itemCount:g,onFetchMore:m,hasNextPage:x,fetchingMore:h})=>{let{sections:p,topLineItems:f,groupedTotal:j,groupedLineItemCount:b}=function(e,t){let{lineItems:i,total:r}=e,s=[...i].sort((e,t)=>t.usage-e.usage),n=r-s.reduce((e,t)=>e+t.usage,0),a=t-s.length;return{sections:((e,t,i,r)=>{let s=[],n=0;e.forEach(e=>{let t=Math.max(e.percentage,.0075),i=t-e.percentage;0!==i&&(n+=i),s.push({percentage:t,usage:e.usage,adjusted:0!==i,grouped:!1,repl:e.repl})});let a=0===t?0:Math.max(t,.0075);if(a>0&&r>0){let e=a-t;e>0&&(n+=e),s.push({percentage:a,adjusted:e>0,usage:i,grouped:!0,count:r})}if(n>0){let e=s.filter(e=>!e.adjusted),t=e.length;if(t>0){let i=n/t;for(let t of e)t.percentage-=i}}return s})(s,0===r?0:n/r,n,a),topLineItems:s,groupedTotal:n,groupedLineItemCount:a}}(s,g);return(0,t.jsx)(a.View,{clsx:ei.default.self,br:4,children:(0,t.jsxs)("table",{children:[(0,t.jsx)("thead",{children:(0,t.jsx)(d,{type:e,resourceUsageType:l})}),(0,t.jsxs)("tbody",{children:[o?(0,t.jsx)("tr",{children:(0,t.jsx)("td",{colSpan:c(e),children:(0,t.jsx)(Z,{sections:p,resourceUsageType:l})})}):null,0===s.lineItems.length?(0,t.jsx)("tr",{children:(0,t.jsx)("td",{colSpan:c(e),children:(0,t.jsx)(n.Text,{multiline:!1,children:"No resource usage"})})}):null,f.map((i,r)=>(0,t.jsx)(K,{type:e,color:z[r%z.length],resourceUsageType:l,username:u,itemSummary:i},r)),b>0?(0,t.jsx)(X,{type:e,color:z[f.length%z.length],usage:j,resourceUsageType:l,username:u,itemCount:b}):null,x?(0,t.jsx)("tr",{children:(0,t.jsx)("td",{colSpan:c(e),children:(0,t.jsx)(a.View,{pb:8,align:"center",children:(0,t.jsx)(et.Button,{css:h&&ee.loadingStyle.backgroundPulse(),loading:h,disabled:h,variant:"default",onClick:()=>{m&&m()},iconLeft:h?(0,t.jsx)(r.default,{}):(0,t.jsx)(i.default,{}),text:h?"Loading more Apps...":"Load more Apps"})})})}):null]})]})})};e.s(["ResourceBreakdown",0,er],155564);var es=e.i(927600),en=e.i(416746),ea=e.i(416298);function el(){return decodeURIComponent(window.location.hash.replace("#",""))}e.s(["usePathHash",0,el],926965);var eo=e.i(476601),ed=e.i(302815),ec=e.i(723517),eu=e.i(766299),eg=e.i(488299),em=e.i(201894);let ex=k.tokens.orangeDefault,eh=k.tokens.accentNegativeDefault,ep=(0,O.cssRecord)({nameContainer:[],nameLabelUnitText:[R.rcss.flex.growAndShrink(1)],chevronIcon:[R.rcss.m(4),R.rcss.transition.snappy],interactiveRowContainer:[ec.interactive.filled,R.rcss.borderRadius(0)],loadingArea:[R.rcss.backgroundColor.backgroundDefault,ee.loadingStyle.backgroundPulse(),R.rcss.borderRadius(4),R.rcss.p(8),R.rcss.height(24)],percentageRow:[R.rcss.width("100%"),R.rcss.rowWithGap(4),R.rcss.align.center],limitWarningText:[{color:ex}],limitReachedText:[{color:eh}],toggleContainer:[R.rcss.width(k.tokens.space24),R.rcss.minHeight(k.tokens.space24)],measureBarContainer:[R.rcss.width("80%")],measureBar:[R.rcss.height(8),R.rcss.backgroundColor.backgroundHighest],cellContainer:[R.rcss.pr(12),R.rcss.pl(4),R.rcss.py(4),R.rcss.align.end,R.rcss.minHeight(36),{[R.media.max("tabletMax")]:[R.rcss.py(8),R.rcss.colWithGap(8)]},{[R.media.min("tabletMin")]:R.rcss.textAlign.right}],mobileNameAndUnit:[R.rcss.flex.row,R.rcss.rowWithGap(4),R.rcss.align.center,R.rcss.py(8),{[R.media.min("mobileMax")]:R.rcss.width("100%")}],mobilePricePerUnit:[R.rcss.textAlign.right,R.rcss.align.baseline,R.rcss.minWidth("30%")],hiddenOnDesktop:[{[R.media.min("tabletMin")]:R.rcss.display.none}],hiddenOnMobile:[{[R.media.max("tabletMin")]:R.rcss.display.none}],warning:[R.rcss.display.flex,R.rcss.flex.row,R.rcss.align.center,R.rcss.rowWithGap(4)],usagePercentage:[R.rcss.flex.row,R.rcss.justify.spaceBetween],rotateLeft:[{rotate:"90deg"}],rotateDefault:[{rotate:"0deg"}],top:[R.rcss.top(0)]}),ef=(0,O.cssRecord)({rotateLeft:[ep.chevronIcon,ep.rotateLeft],rotateDefault:[ep.chevronIcon,ep.rotateDefault]}),ej=(0,O.cssRecord)({mobileNoBreakdown:[ep.hiddenOnDesktop],mobileWithBreakdown:[ep.interactiveRowContainer,ep.hiddenOnDesktop],desktopNoBreakdown:[ep.hiddenOnMobile],desktopWithBreakdown:[ep.interactiveRowContainer,ep.hiddenOnMobile],toggle:[ep.nameContainer,ep.toggleContainer]}),eb=(0,O.cssRecord)({self:[ep.cellContainer,ep.mobilePricePerUnit]}),ey=(0,O.cssRecord)({mobileContainer:[{[R.media.min("tabletMax")]:R.rcss.rowWithGap(8)}]});function ew({name:e,unit:i,showToggle:r,isBreakdownOpen:s,tooltip:l,onToggleBreakdown:o}){return(0,t.jsxs)(a.View,{row:!0,gap:4,align:"center",children:[(0,t.jsx)(eP,{showToggle:r,isBreakdownOpen:s,onClick:o}),(0,t.jsx)(A.Tooltip,{tooltip:l,placement:"bottom",isDisabled:!l,children:(0,t.jsxs)(a.View,{grow:!0,shrink:!0,align:"center",row:!0,gap:4,children:[(0,t.jsx)(n.Text,{maxLines:1,children:e}),i?(0,t.jsxs)(n.Text,{maxLines:1,css:ep.nameLabelUnitText,color:"dimmest",children:["(",i,")"]}):null,l?(0,t.jsx)(en.default,{}):null]})})]})}function ev(){return(0,t.jsx)(a.View,{css:ep.loadingArea})}function eC(e){switch(e){case"Bytes":case"GiB":return"GiB";case"GiB-months":return"GiB-months";case"ComputeUnits":return"Compute units";case"Requests":return"Requests";case"ComputeHours":return"Compute hours";case"Site":return"Count";case"Hours":return"Hours";case"Deployments":return"Deployments";case"Tokens":return"Tokens";case"Minutes":return"Minutes";case"None":case"Dollars":return"";case"PlanSteps":return"Plan steps";case"EditRequests":return"Edit requests";default:(0,s.default)(e)}}let eT=()=>(0,t.jsx)("td",{css:ep.cellContainer,children:(0,t.jsx)(ev,{})});function e_({hideQuotaColumns:e}){let i=(0,eu.useIdSeed)(),r=(0,t.jsx)("tr",{css:ep.hiddenOnMobile,children:(0,ed.makeArrayOfLength)(e?4:6).map((e,r)=>(0,t.jsx)(eT,{},i(r)))}),s=(0,t.jsx)("tr",{css:ep.hiddenOnDesktop,children:(0,ed.makeArrayOfLength)(2).map((e,r)=>(0,t.jsx)(eT,{},i(r)))});return(0,t.jsxs)(t.Fragment,{children:[r,s]})}function eS({decimal:e,displayWarnings:t}){return t&&e>=1?eh:t&&e>=.75?ex:void 0}function eD({decimal:e,displayWarnings:t}){return t&&e>=1?ep.limitReachedText:t&&e>=.75?ep.limitWarningText:void 0}function eB({decimal:e,displayWarnings:i}){return(0,t.jsxs)(a.View,{css:ep.percentageRow,children:[(0,t.jsx)(a.View,{css:ep.measureBarContainer,children:(0,t.jsx)(A.Tooltip,{tooltip:(0,t.jsx)(eU,{decimal:e,displayWarnings:i}),isDisabled:!i||!e,children:(0,t.jsx)(em.MeasureBar,{css:ep.measureBar,current:e,total:1,tooltipHidden:!0,color:eS({decimal:e,displayWarnings:i})})})}),(0,t.jsx)(n.Text,{css:eD({decimal:e,displayWarnings:i}),children:(0,eo.convertDecimalToDisplayPercent)(e)})]})}function eU({decimal:e,displayWarnings:i}){return i&&e?e>=1?(0,t.jsxs)(a.View,{css:ep.warning,children:[(0,t.jsx)(ea.default,{color:eh}),(0,t.jsx)(n.Text,{children:"At limit"})]}):e>=.75?(0,t.jsxs)(a.View,{css:ep.warning,children:[(0,t.jsx)(ea.default,{color:ex}),(0,t.jsx)(n.Text,{children:"Near limit"})]}):null:null}function eP({showToggle:e,isBreakdownOpen:i,onClick:r}){return(0,t.jsx)(a.View,{css:ej.toggle,children:e?(0,t.jsx)(eg.IconButton,{alt:i?"Hide breakdown":"Show breakdown",onClick:r,children:(0,t.jsx)(es.default,{color:k.tokens.foregroundDimmer,css:i?ef.rotateLeft:ef.rotateDefault,size:16})}):null})}function ek({usageUnits:e,resourceUsageType:i}){return(0,t.jsx)(a.View,{children:(0,t.jsx)(n.Text,{children:null!==e?(0,I.toDisplaySize)(e,{resourceUsageType:i,precision:2,truncateToMillions:!0,skipUnits:"GiB"!==i&&"Bytes"!==i,minimumValue:"GiB"===i||"Bytes"===i?.01:void 0}):"-"})})}function eO({includedWithPlan:e}){return(0,t.jsx)(a.View,{row:!0,align:"center",gap:6,justify:"end",css:R.rcss.flex.wrap,children:(0,t.jsx)(n.Text,{children:e})})}function eR({resourceName:e,resourceUsageType:i,includedWithPlan:r,usagePercentage:s,usageUnits:l,price:o,displayWarnings:d=!1,hideCost:c,hasBreakdown:u,onToggleBreakdown:g,isBreakdownOpen:m,children:x,hideQuotaColumns:h}){return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)("tr",{"aria-label":`${e} Usage`,css:u?ej.mobileWithBreakdown:ej.mobileNoBreakdown,onClick:g,children:[(0,t.jsx)("td",{css:ep.cellContainer,children:(0,t.jsxs)(a.View,{css:ey.mobileContainer,children:[(0,t.jsxs)("div",{css:ep.mobileNameAndUnit,children:[u?(0,t.jsx)(es.default,{color:k.tokens.foregroundDimmer,css:m?ep.rotateLeft:ep.rotateDefault,size:16}):null,(0,t.jsx)(n.Text,{maxLines:1,children:e}),eC(i)?(0,t.jsxs)(n.Text,{maxLines:1,css:ep.nameLabelUnitText,color:"dimmest",children:["(",eC(i),")"]}):null]}),h?null:(0,t.jsxs)("div",{children:[null!==s?(0,t.jsx)(em.MeasureBar,{current:s,total:1,tooltipHidden:!0,css:ep.measureBar,color:eS({decimal:s,displayWarnings:d})}):null,(0,t.jsx)("div",{css:ep.usagePercentage,children:null!==s?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.Text,{css:eD({decimal:s,displayWarnings:d}),children:(0,eo.convertDecimalToDisplayPercent)(s)}),(0,t.jsx)(eO,{includedWithPlan:r})]}):null})]})]})}),(0,t.jsxs)("td",{css:eb.self,children:[(0,t.jsx)(n.Text,{css:ep.top,color:0===o?"dimmest":void 0,children:c?"-":`$${o.toFixed(2)}`}),null!==l?(0,t.jsx)(ek,{usagePercentage:s,displayWarnings:d,usageUnits:l,resourceUsageType:i}):(0,t.jsx)("div",{})]})]}),u&&m?(0,t.jsx)("tr",{css:ep.hiddenOnDesktop,children:(0,t.jsx)("td",{colSpan:6,children:(0,t.jsx)(a.View,{px:8,py:8,children:x})})}):null]})}function eA({resourceName:e,resourceUsageType:i,includedWithPlan:r,unitPrice:s,usagePercentage:l,usageUnits:o,price:d,displayWarnings:c=!1,hideCost:u,hasBreakdown:g,isBreakdownOpen:m,onToggleBreakdown:x,children:h,tooltip:p,id:f,hideQuotaColumns:j}){return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)("tr",{css:g?ej.desktopWithBreakdown:ej.desktopNoBreakdown,onClick:x,children:[(0,t.jsx)("td",{id:f,css:ep.cellContainer,children:(0,t.jsx)(ew,{name:e,unit:eC(i),showToggle:g,isBreakdownOpen:m,onToggleBreakdown:x,tooltip:p})}),!j&&(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)("td",{css:ep.cellContainer,children:null!==l?(0,t.jsx)(eB,{decimal:l,displayWarnings:c}):(0,t.jsx)("div",{})}),(0,t.jsx)("td",{css:ep.cellContainer,children:(0,t.jsx)(eO,{includedWithPlan:r})})]}),(0,t.jsx)("td",{css:ep.cellContainer,children:(0,t.jsx)(ek,{usagePercentage:l,displayWarnings:c,usageUnits:o,resourceUsageType:i})}),(0,t.jsx)("td",{css:ep.cellContainer,children:(0,t.jsx)(n.Text,{children:s??"-"})}),(0,t.jsx)("td",{css:ep.cellContainer,children:u?"-":(0,t.jsxs)(n.Text,{maxLines:1,color:0===d?"dimmest":void 0,children:["$",d.toFixed(2)]})})]}),g&&m?(0,t.jsx)("tr",{css:ep.hiddenOnMobile,children:(0,t.jsx)("td",{colSpan:6,children:(0,t.jsx)(a.View,{pl:24,pr:12,py:8,children:h})})}):null]})}function eV({resourceName:e,resourceUsageType:i,includedWithPlan:r,quotaExpiryDate:s,unitPrice:n,usagePercentage:a,loading:l,usageUnits:o,price:d,tooltip:c,hideCost:u=!1,displayWarnings:m=!1,children:x,id:h,hideQuotaColumns:p}){let f=el(),j=(0,D.useIsMobile)(),[b,y]=(0,g.useState)(!1);(0,g.useEffect)(()=>{f===h&&y(!0)},[h,f]);let w=!!x,v=()=>y(e=>!e);return l?(0,t.jsx)(e_,{hideQuotaColumns:p}):j?(0,t.jsx)(eR,{hasBreakdown:w,isBreakdownOpen:b,onToggleBreakdown:v,resourceName:e,resourceUsageType:i,includedWithPlan:r,quotaExpiryDate:s,unitPrice:n,usagePercentage:a,loading:l,usageUnits:o,hideCost:u,price:d,displayWarnings:m,id:h,hideQuotaColumns:p,children:x}):(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(eA,{hasBreakdown:w,isBreakdownOpen:b,onToggleBreakdown:v,resourceName:e,resourceUsageType:i,includedWithPlan:r,quotaExpiryDate:s,unitPrice:n,usagePercentage:a,loading:l,usageUnits:o,price:d,hideCost:u,displayWarnings:m,tooltip:c,id:h,hideQuotaColumns:p,children:x}),(0,t.jsx)(eR,{hasBreakdown:w,isBreakdownOpen:b,onToggleBreakdown:v,resourceName:e,resourceUsageType:i,includedWithPlan:r,quotaExpiryDate:s,unitPrice:n,usagePercentage:a,loading:l,usageUnits:o,price:d,hideCost:u,displayWarnings:m,id:h,hideQuotaColumns:p,children:x})]})}e.s(["ResourceRow",0,eV],663614);let eM=(e,t)=>{let{resourceUsageType:i,precision:r,truncateToMillions:s}=t;return 0===e||void 0===e?"-":(0,I.toDisplaySize)(e,{resourceUsageType:i,precision:r,skipUnits:!0,truncateToMillions:s})};e.s(["getDisplayedQuotaText",0,eM],92796);let eI=e=>{switch(e.__typename){case"UsageOverviewUnitPriceSku":return eG(e);case"UsageOverviewMatrixPriceSku":return ez(e);case"UsageOverviewStaticDeployments":return eF(e);default:(0,s.default)(e)}},eF=({replUsageOverview:e,usage:t,allotment:i})=>({total:t,limit:i,lineItems:e.map(eE)}),eG=({replUsageOverview:e,usage:t,allotment:i})=>({total:t,limit:i,lineItems:e.map(eL)}),ez=({replUsageOverview:e,usage:t,tierType:i})=>({total:t,limit:0,lineItems:e.map(e=>eW(e,i))}),eE=e=>({usage:e.usage,percentage:e.percentage,repl:e.usageRepl,lastDeployedAt:e.usageRepl?.__typename==="Repl"&&e.usageRepl.hostingDeployment?.__typename==="HostingDeployment"?e.usageRepl?.hostingDeployment.currentBuild.timeCreated:void 0}),eW=(e,t)=>({usage:e.usage,percentage:e.percentage,repl:e.usageRepl,matrixTier:{label:e.configName,type:t}}),eL=e=>({usage:e.usage,percentage:e.percentage,repl:e.usageRepl});e.s(["sharedSummary",0,eI],417785),e.s(["default",0,function({username:e,rowData:i,fetchingMore:r,onFetchMore:s,loading:n,id:a,resourceUsageType:l,displayConfig:o,displayWarnings:d,tooltip:c,hideQuotaColumns:u}){let g=i?.usageByReplConnection.pageInfo.hasNextPage??!1,m=i?.usageByReplConnection.items?eI({replUsageOverview:i.usageByReplConnection.items,usage:i.usage,allotment:i.allotment,__typename:"UsageOverviewUnitPriceSku"}):null,x=e&&m&&i&&i.usageByReplConnection.items.length>0,h=eM(i?.allotment,{resourceUsageType:l,...o});return(0,t.jsx)(eV,{resourceName:i?.displayName,resourceUsageType:l,includedWithPlan:h,loading:n,displayWarnings:d,tooltip:c,unitPrice:i?.unitPrice,usagePercentage:i?.percentage??null,usageUnits:i?.usage??0,price:i?.overageCostsUSD??0,id:a,hideQuotaColumns:u,children:x?(0,t.jsx)(er,{type:"tier",resourceUsageType:l,summary:m,showBreakdown:!0,username:e,itemCount:i.totalRepls,onFetchMore:s,hasNextPage:g,fetchingMore:r}):null})}],239794)},459097,e=>{"use strict";var t=e.i(276385),i=e.i(155564),r=e.i(663614),s=e.i(92796),n=e.i(417785);e.s(["default",0,function({username:e,rowData:a,fetchingMore:l,onFetchMore:o,loading:d,id:c,resourceUsageType:u,tierType:g,displayConfig:m}){let x=a?.usageByReplConnection.items,h=a?.usageByReplConnection.pageInfo.hasNextPage??!1,p=a?.usageByReplConnection.items?(0,n.sharedSummary)({replUsageOverview:a.usageByReplConnection.items,__typename:"UsageOverviewMatrixPriceSku",tierType:g,usage:a.usage}):null,f=e&&p&&x&&x.length>0,j=(0,s.getDisplayedQuotaText)(a?.allotment,{resourceUsageType:u,...m});return(0,t.jsx)(r.ResourceRow,{resourceName:a?.displayName,resourceUsageType:u,includedWithPlan:j,loading:d,unitPrice:a?.unitPrice,usagePercentage:null,usageUnits:a?.usage??0,price:a?.overageCostsUSD??0,id:c,children:f?(0,t.jsx)(i.ResourceBreakdown,{type:"matrix",resourceUsageType:u,summary:p,showBreakdown:!0,username:e,itemCount:a.totalRepls,onFetchMore:o,hasNextPage:h,fetchingMore:l}):null})}])}]);
+
+//# debugId=64af0eb0-6467-c5b4-b2c3-ac5b21a9b8f0
+//# sourceMappingURL=0ie3bx5rgkk60.js.map
